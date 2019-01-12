@@ -1,0 +1,1673 @@
+TimeQuest Timing Analyzer report for HAMMAM_SRAM
+Wed Nov 22 17:55:50 2017
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'CLKAccum'
+ 12. Slow Model Hold: 'CLKAccum'
+ 13. Slow Model Minimum Pulse Width: 'CLK'
+ 14. Slow Model Minimum Pulse Width: 'CLKAccum'
+ 15. Slow Model Minimum Pulse Width: 'CLK2'
+ 16. Setup Times
+ 17. Hold Times
+ 18. Clock to Output Times
+ 19. Minimum Clock to Output Times
+ 20. Propagation Delay
+ 21. Minimum Propagation Delay
+ 22. Fast Model Setup Summary
+ 23. Fast Model Hold Summary
+ 24. Fast Model Recovery Summary
+ 25. Fast Model Removal Summary
+ 26. Fast Model Minimum Pulse Width Summary
+ 27. Fast Model Setup: 'CLKAccum'
+ 28. Fast Model Hold: 'CLKAccum'
+ 29. Fast Model Minimum Pulse Width: 'CLK'
+ 30. Fast Model Minimum Pulse Width: 'CLKAccum'
+ 31. Fast Model Minimum Pulse Width: 'CLK2'
+ 32. Setup Times
+ 33. Hold Times
+ 34. Clock to Output Times
+ 35. Minimum Clock to Output Times
+ 36. Propagation Delay
+ 37. Minimum Propagation Delay
+ 38. Multicorner Timing Analysis Summary
+ 39. Setup Times
+ 40. Hold Times
+ 41. Clock to Output Times
+ 42. Minimum Clock to Output Times
+ 43. Progagation Delay
+ 44. Minimum Progagation Delay
+ 45. Setup Transfers
+ 46. Hold Transfers
+ 47. Report TCCS
+ 48. Report RSKM
+ 49. Unconstrained Paths
+ 50. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; HAMMAM_SRAM                                                       ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                               ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets      ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; CLK        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLK }      ;
+; CLK2       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLK2 }     ;
+; CLKAccum   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLKAccum } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 389.56 MHz ; 389.56 MHz      ; CLKAccum   ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-----------------------------------+
+; Slow Model Setup Summary          ;
++----------+--------+---------------+
+; Clock    ; Slack  ; End Point TNS ;
++----------+--------+---------------+
+; CLKAccum ; -5.523 ; -78.828       ;
++----------+--------+---------------+
+
+
++----------------------------------+
+; Slow Model Hold Summary          ;
++----------+-------+---------------+
+; Clock    ; Slack ; End Point TNS ;
++----------+-------+---------------+
+; CLKAccum ; 0.795 ; 0.000         ;
++----------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++----------+--------+--------------------+
+; Clock    ; Slack  ; End Point TNS      ;
++----------+--------+--------------------+
+; CLK      ; -1.423 ; -23.990            ;
+; CLKAccum ; -1.222 ; -17.222            ;
+; CLK2     ; -1.222 ; -9.222             ;
++----------+--------+--------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'CLKAccum'                                                                                        ;
++--------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+; -5.523 ; data1[0]  ; HAMMAMACCU:ACCU|temp[15] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.853      ;
+; -5.453 ; data1[1]  ; HAMMAMACCU:ACCU|temp[15] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.783      ;
+; -5.452 ; data1[0]  ; HAMMAMACCU:ACCU|temp[14] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.782      ;
+; -5.382 ; data1[1]  ; HAMMAMACCU:ACCU|temp[14] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.712      ;
+; -5.381 ; data1[0]  ; HAMMAMACCU:ACCU|temp[13] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.711      ;
+; -5.350 ; data1[2]  ; HAMMAMACCU:ACCU|temp[15] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.680      ;
+; -5.311 ; data1[1]  ; HAMMAMACCU:ACCU|temp[13] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.641      ;
+; -5.310 ; data1[0]  ; HAMMAMACCU:ACCU|temp[12] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.640      ;
+; -5.282 ; data1[3]  ; HAMMAMACCU:ACCU|temp[15] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.612      ;
+; -5.282 ; data1[4]  ; HAMMAMACCU:ACCU|temp[15] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.612      ;
+; -5.279 ; data1[2]  ; HAMMAMACCU:ACCU|temp[14] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.609      ;
+; -5.240 ; data1[1]  ; HAMMAMACCU:ACCU|temp[12] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.570      ;
+; -5.239 ; data1[0]  ; HAMMAMACCU:ACCU|temp[11] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.569      ;
+; -5.211 ; data1[3]  ; HAMMAMACCU:ACCU|temp[14] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.541      ;
+; -5.211 ; data1[4]  ; HAMMAMACCU:ACCU|temp[14] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.541      ;
+; -5.208 ; data1[2]  ; HAMMAMACCU:ACCU|temp[13] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.538      ;
+; -5.171 ; data1[5]  ; HAMMAMACCU:ACCU|temp[15] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.501      ;
+; -5.169 ; data1[1]  ; HAMMAMACCU:ACCU|temp[11] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.499      ;
+; -5.168 ; data1[0]  ; HAMMAMACCU:ACCU|temp[10] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.498      ;
+; -5.140 ; data1[3]  ; HAMMAMACCU:ACCU|temp[13] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.470      ;
+; -5.140 ; data1[4]  ; HAMMAMACCU:ACCU|temp[13] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.470      ;
+; -5.137 ; data1[2]  ; HAMMAMACCU:ACCU|temp[12] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.467      ;
+; -5.100 ; data1[5]  ; HAMMAMACCU:ACCU|temp[14] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.430      ;
+; -5.098 ; data1[1]  ; HAMMAMACCU:ACCU|temp[10] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.428      ;
+; -5.097 ; data1[0]  ; HAMMAMACCU:ACCU|temp[9]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.427      ;
+; -5.069 ; data1[3]  ; HAMMAMACCU:ACCU|temp[12] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.399      ;
+; -5.069 ; data1[4]  ; HAMMAMACCU:ACCU|temp[12] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.399      ;
+; -5.066 ; data1[2]  ; HAMMAMACCU:ACCU|temp[11] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.396      ;
+; -5.046 ; data1[6]  ; HAMMAMACCU:ACCU|temp[15] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.376      ;
+; -5.029 ; data1[5]  ; HAMMAMACCU:ACCU|temp[13] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.359      ;
+; -5.027 ; data1[1]  ; HAMMAMACCU:ACCU|temp[9]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.357      ;
+; -5.026 ; data1[0]  ; HAMMAMACCU:ACCU|temp[8]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.356      ;
+; -4.998 ; data1[3]  ; HAMMAMACCU:ACCU|temp[11] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.328      ;
+; -4.998 ; data1[4]  ; HAMMAMACCU:ACCU|temp[11] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.328      ;
+; -4.995 ; data1[2]  ; HAMMAMACCU:ACCU|temp[10] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.325      ;
+; -4.975 ; data1[6]  ; HAMMAMACCU:ACCU|temp[14] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.305      ;
+; -4.958 ; data1[5]  ; HAMMAMACCU:ACCU|temp[12] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.288      ;
+; -4.956 ; data1[1]  ; HAMMAMACCU:ACCU|temp[8]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.286      ;
+; -4.927 ; data1[3]  ; HAMMAMACCU:ACCU|temp[10] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.257      ;
+; -4.927 ; data1[4]  ; HAMMAMACCU:ACCU|temp[10] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.257      ;
+; -4.924 ; data1[2]  ; HAMMAMACCU:ACCU|temp[9]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.254      ;
+; -4.904 ; data1[6]  ; HAMMAMACCU:ACCU|temp[13] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.234      ;
+; -4.901 ; data2[0]  ; HAMMAMACCU:ACCU|temp[15] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.946      ;
+; -4.887 ; data1[5]  ; HAMMAMACCU:ACCU|temp[11] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.217      ;
+; -4.867 ; data1[0]  ; HAMMAMACCU:ACCU|temp[7]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.197      ;
+; -4.856 ; data1[3]  ; HAMMAMACCU:ACCU|temp[9]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.186      ;
+; -4.856 ; data1[4]  ; HAMMAMACCU:ACCU|temp[9]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.186      ;
+; -4.853 ; data1[2]  ; HAMMAMACCU:ACCU|temp[8]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.183      ;
+; -4.833 ; data1[7]  ; HAMMAMACCU:ACCU|temp[15] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.163      ;
+; -4.833 ; data1[6]  ; HAMMAMACCU:ACCU|temp[12] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.163      ;
+; -4.830 ; data2[0]  ; HAMMAMACCU:ACCU|temp[14] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.875      ;
+; -4.827 ; data2[1]  ; HAMMAMACCU:ACCU|temp[15] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.872      ;
+; -4.816 ; data1[5]  ; HAMMAMACCU:ACCU|temp[10] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.146      ;
+; -4.797 ; data1[1]  ; HAMMAMACCU:ACCU|temp[7]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.127      ;
+; -4.796 ; data1[0]  ; HAMMAMACCU:ACCU|temp[6]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.126      ;
+; -4.785 ; data1[3]  ; HAMMAMACCU:ACCU|temp[8]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.115      ;
+; -4.785 ; data1[4]  ; HAMMAMACCU:ACCU|temp[8]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.115      ;
+; -4.762 ; data1[7]  ; HAMMAMACCU:ACCU|temp[14] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.092      ;
+; -4.762 ; data1[6]  ; HAMMAMACCU:ACCU|temp[11] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.092      ;
+; -4.759 ; data2[0]  ; HAMMAMACCU:ACCU|temp[13] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.804      ;
+; -4.756 ; data2[1]  ; HAMMAMACCU:ACCU|temp[14] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.801      ;
+; -4.745 ; data1[5]  ; HAMMAMACCU:ACCU|temp[9]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.075      ;
+; -4.735 ; data2[2]  ; HAMMAMACCU:ACCU|temp[15] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.780      ;
+; -4.726 ; data1[1]  ; HAMMAMACCU:ACCU|temp[6]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.056      ;
+; -4.725 ; data1[0]  ; HAMMAMACCU:ACCU|temp[5]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.055      ;
+; -4.694 ; data1[2]  ; HAMMAMACCU:ACCU|temp[7]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.024      ;
+; -4.691 ; data1[7]  ; HAMMAMACCU:ACCU|temp[13] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.021      ;
+; -4.691 ; data1[6]  ; HAMMAMACCU:ACCU|temp[10] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.021      ;
+; -4.688 ; data2[0]  ; HAMMAMACCU:ACCU|temp[12] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.733      ;
+; -4.685 ; data2[1]  ; HAMMAMACCU:ACCU|temp[13] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.730      ;
+; -4.674 ; data1[5]  ; HAMMAMACCU:ACCU|temp[8]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 4.004      ;
+; -4.664 ; data2[2]  ; HAMMAMACCU:ACCU|temp[14] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.709      ;
+; -4.657 ; data2[4]  ; HAMMAMACCU:ACCU|temp[15] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.702      ;
+; -4.655 ; data1[1]  ; HAMMAMACCU:ACCU|temp[5]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 3.985      ;
+; -4.654 ; data1[0]  ; HAMMAMACCU:ACCU|temp[4]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 3.984      ;
+; -4.648 ; data2[3]  ; HAMMAMACCU:ACCU|temp[15] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.693      ;
+; -4.626 ; data1[3]  ; HAMMAMACCU:ACCU|temp[7]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 3.956      ;
+; -4.626 ; data1[4]  ; HAMMAMACCU:ACCU|temp[7]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 3.956      ;
+; -4.623 ; data1[2]  ; HAMMAMACCU:ACCU|temp[6]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 3.953      ;
+; -4.620 ; data1[7]  ; HAMMAMACCU:ACCU|temp[12] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 3.950      ;
+; -4.620 ; data1[6]  ; HAMMAMACCU:ACCU|temp[9]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 3.950      ;
+; -4.617 ; data2[0]  ; HAMMAMACCU:ACCU|temp[11] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.662      ;
+; -4.614 ; data2[1]  ; HAMMAMACCU:ACCU|temp[12] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.659      ;
+; -4.593 ; data2[2]  ; HAMMAMACCU:ACCU|temp[13] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.638      ;
+; -4.586 ; data2[4]  ; HAMMAMACCU:ACCU|temp[14] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.631      ;
+; -4.584 ; data1[1]  ; HAMMAMACCU:ACCU|temp[4]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 3.914      ;
+; -4.583 ; data1[0]  ; HAMMAMACCU:ACCU|temp[3]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 3.913      ;
+; -4.577 ; data2[3]  ; HAMMAMACCU:ACCU|temp[14] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.622      ;
+; -4.555 ; data1[3]  ; HAMMAMACCU:ACCU|temp[6]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 3.885      ;
+; -4.555 ; data1[4]  ; HAMMAMACCU:ACCU|temp[6]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 3.885      ;
+; -4.555 ; data2[5]  ; HAMMAMACCU:ACCU|temp[15] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.600      ;
+; -4.552 ; data1[2]  ; HAMMAMACCU:ACCU|temp[5]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 3.882      ;
+; -4.549 ; data1[7]  ; HAMMAMACCU:ACCU|temp[11] ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 3.879      ;
+; -4.549 ; data1[6]  ; HAMMAMACCU:ACCU|temp[8]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 3.879      ;
+; -4.546 ; data2[0]  ; HAMMAMACCU:ACCU|temp[10] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.591      ;
+; -4.543 ; data2[1]  ; HAMMAMACCU:ACCU|temp[11] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.588      ;
+; -4.522 ; data2[2]  ; HAMMAMACCU:ACCU|temp[12] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.567      ;
+; -4.515 ; data1[5]  ; HAMMAMACCU:ACCU|temp[7]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 3.845      ;
+; -4.515 ; data2[4]  ; HAMMAMACCU:ACCU|temp[13] ; CLK2         ; CLKAccum    ; 1.000        ; 0.009      ; 5.560      ;
+; -4.513 ; data1[1]  ; HAMMAMACCU:ACCU|temp[3]  ; CLK          ; CLKAccum    ; 1.000        ; -1.706     ; 3.843      ;
++--------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'CLKAccum'                                                                                                       ;
++-------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                ; To Node                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
+; 0.795 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[4]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.061      ;
+; 0.798 ; HAMMAMACCU:ACCU|temp[13] ; HAMMAMACCU:ACCU|temp[13] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.064      ;
+; 0.800 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[0]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.066      ;
+; 0.801 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[1]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.067      ;
+; 0.802 ; HAMMAMACCU:ACCU|temp[9]  ; HAMMAMACCU:ACCU|temp[9]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.068      ;
+; 0.802 ; HAMMAMACCU:ACCU|temp[11] ; HAMMAMACCU:ACCU|temp[11] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.068      ;
+; 0.802 ; HAMMAMACCU:ACCU|temp[15] ; HAMMAMACCU:ACCU|temp[15] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.068      ;
+; 0.832 ; HAMMAMACCU:ACCU|temp[8]  ; HAMMAMACCU:ACCU|temp[8]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.098      ;
+; 0.835 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[3]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.101      ;
+; 0.835 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[6]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.101      ;
+; 0.835 ; HAMMAMACCU:ACCU|temp[12] ; HAMMAMACCU:ACCU|temp[12] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.101      ;
+; 0.978 ; HAMMAMACCU:ACCU|temp[10] ; HAMMAMACCU:ACCU|temp[10] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.244      ;
+; 0.981 ; HAMMAMACCU:ACCU|temp[7]  ; HAMMAMACCU:ACCU|temp[7]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.247      ;
+; 0.983 ; HAMMAMACCU:ACCU|temp[5]  ; HAMMAMACCU:ACCU|temp[5]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.249      ;
+; 1.011 ; HAMMAMACCU:ACCU|temp[2]  ; HAMMAMACCU:ACCU|temp[2]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.277      ;
+; 1.018 ; HAMMAMACCU:ACCU|temp[14] ; HAMMAMACCU:ACCU|temp[14] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.284      ;
+; 1.178 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[5]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.444      ;
+; 1.183 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[1]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.449      ;
+; 1.185 ; HAMMAMACCU:ACCU|temp[13] ; HAMMAMACCU:ACCU|temp[14] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.451      ;
+; 1.188 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[2]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.454      ;
+; 1.189 ; HAMMAMACCU:ACCU|temp[11] ; HAMMAMACCU:ACCU|temp[12] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.455      ;
+; 1.189 ; HAMMAMACCU:ACCU|temp[9]  ; HAMMAMACCU:ACCU|temp[10] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.455      ;
+; 1.218 ; HAMMAMACCU:ACCU|temp[8]  ; HAMMAMACCU:ACCU|temp[9]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.484      ;
+; 1.221 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[4]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.487      ;
+; 1.221 ; HAMMAMACCU:ACCU|temp[12] ; HAMMAMACCU:ACCU|temp[13] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.487      ;
+; 1.221 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[7]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.487      ;
+; 1.249 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[6]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.515      ;
+; 1.254 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[2]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.520      ;
+; 1.256 ; HAMMAMACCU:ACCU|temp[13] ; HAMMAMACCU:ACCU|temp[15] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.522      ;
+; 1.259 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[3]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.525      ;
+; 1.260 ; HAMMAMACCU:ACCU|temp[9]  ; HAMMAMACCU:ACCU|temp[11] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.526      ;
+; 1.260 ; HAMMAMACCU:ACCU|temp[11] ; HAMMAMACCU:ACCU|temp[13] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.526      ;
+; 1.289 ; HAMMAMACCU:ACCU|temp[8]  ; HAMMAMACCU:ACCU|temp[10] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.555      ;
+; 1.292 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[5]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.558      ;
+; 1.292 ; HAMMAMACCU:ACCU|temp[12] ; HAMMAMACCU:ACCU|temp[14] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.558      ;
+; 1.320 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[7]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.586      ;
+; 1.325 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[3]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.591      ;
+; 1.330 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[4]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.596      ;
+; 1.331 ; HAMMAMACCU:ACCU|temp[9]  ; HAMMAMACCU:ACCU|temp[12] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.597      ;
+; 1.331 ; HAMMAMACCU:ACCU|temp[11] ; HAMMAMACCU:ACCU|temp[14] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.597      ;
+; 1.360 ; HAMMAMACCU:ACCU|temp[8]  ; HAMMAMACCU:ACCU|temp[11] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.626      ;
+; 1.361 ; HAMMAMACCU:ACCU|temp[10] ; HAMMAMACCU:ACCU|temp[11] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.627      ;
+; 1.363 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[6]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.629      ;
+; 1.363 ; HAMMAMACCU:ACCU|temp[12] ; HAMMAMACCU:ACCU|temp[15] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.629      ;
+; 1.370 ; HAMMAMACCU:ACCU|temp[5]  ; HAMMAMACCU:ACCU|temp[6]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.636      ;
+; 1.380 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[8]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.646      ;
+; 1.396 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[4]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.662      ;
+; 1.397 ; HAMMAMACCU:ACCU|temp[2]  ; HAMMAMACCU:ACCU|temp[3]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.663      ;
+; 1.401 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[5]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.667      ;
+; 1.402 ; HAMMAMACCU:ACCU|temp[9]  ; HAMMAMACCU:ACCU|temp[13] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.668      ;
+; 1.402 ; HAMMAMACCU:ACCU|temp[11] ; HAMMAMACCU:ACCU|temp[15] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.668      ;
+; 1.404 ; HAMMAMACCU:ACCU|temp[14] ; HAMMAMACCU:ACCU|temp[15] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.670      ;
+; 1.431 ; HAMMAMACCU:ACCU|temp[8]  ; HAMMAMACCU:ACCU|temp[12] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.697      ;
+; 1.432 ; HAMMAMACCU:ACCU|temp[10] ; HAMMAMACCU:ACCU|temp[12] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.698      ;
+; 1.434 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[7]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.700      ;
+; 1.441 ; HAMMAMACCU:ACCU|temp[5]  ; HAMMAMACCU:ACCU|temp[7]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.707      ;
+; 1.451 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[9]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.717      ;
+; 1.457 ; HAMMAMACCU:ACCU|temp[7]  ; HAMMAMACCU:ACCU|temp[8]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.723      ;
+; 1.467 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[5]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.733      ;
+; 1.468 ; HAMMAMACCU:ACCU|temp[2]  ; HAMMAMACCU:ACCU|temp[4]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.734      ;
+; 1.472 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[6]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.738      ;
+; 1.473 ; HAMMAMACCU:ACCU|temp[9]  ; HAMMAMACCU:ACCU|temp[14] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.739      ;
+; 1.479 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[8]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.745      ;
+; 1.502 ; HAMMAMACCU:ACCU|temp[8]  ; HAMMAMACCU:ACCU|temp[13] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.768      ;
+; 1.503 ; HAMMAMACCU:ACCU|temp[10] ; HAMMAMACCU:ACCU|temp[13] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.769      ;
+; 1.522 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[10] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.788      ;
+; 1.528 ; HAMMAMACCU:ACCU|temp[7]  ; HAMMAMACCU:ACCU|temp[9]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.794      ;
+; 1.538 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[6]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.804      ;
+; 1.539 ; HAMMAMACCU:ACCU|temp[2]  ; HAMMAMACCU:ACCU|temp[5]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.805      ;
+; 1.543 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[7]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.809      ;
+; 1.544 ; HAMMAMACCU:ACCU|temp[9]  ; HAMMAMACCU:ACCU|temp[15] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.810      ;
+; 1.550 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[9]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.816      ;
+; 1.573 ; HAMMAMACCU:ACCU|temp[8]  ; HAMMAMACCU:ACCU|temp[14] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.839      ;
+; 1.574 ; HAMMAMACCU:ACCU|temp[10] ; HAMMAMACCU:ACCU|temp[14] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.840      ;
+; 1.593 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[11] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.859      ;
+; 1.593 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[8]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.859      ;
+; 1.599 ; HAMMAMACCU:ACCU|temp[7]  ; HAMMAMACCU:ACCU|temp[10] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.865      ;
+; 1.600 ; HAMMAMACCU:ACCU|temp[5]  ; HAMMAMACCU:ACCU|temp[8]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.866      ;
+; 1.609 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[7]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.875      ;
+; 1.610 ; HAMMAMACCU:ACCU|temp[2]  ; HAMMAMACCU:ACCU|temp[6]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.876      ;
+; 1.621 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[10] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.887      ;
+; 1.644 ; HAMMAMACCU:ACCU|temp[8]  ; HAMMAMACCU:ACCU|temp[15] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.910      ;
+; 1.645 ; HAMMAMACCU:ACCU|temp[10] ; HAMMAMACCU:ACCU|temp[15] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.911      ;
+; 1.664 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[12] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.930      ;
+; 1.664 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[9]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.930      ;
+; 1.670 ; HAMMAMACCU:ACCU|temp[7]  ; HAMMAMACCU:ACCU|temp[11] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.936      ;
+; 1.671 ; HAMMAMACCU:ACCU|temp[5]  ; HAMMAMACCU:ACCU|temp[9]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.937      ;
+; 1.681 ; HAMMAMACCU:ACCU|temp[2]  ; HAMMAMACCU:ACCU|temp[7]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.947      ;
+; 1.692 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[11] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.958      ;
+; 1.702 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[8]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 1.968      ;
+; 1.735 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[13] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 2.001      ;
+; 1.735 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[10] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 2.001      ;
+; 1.741 ; HAMMAMACCU:ACCU|temp[7]  ; HAMMAMACCU:ACCU|temp[12] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 2.007      ;
+; 1.742 ; HAMMAMACCU:ACCU|temp[5]  ; HAMMAMACCU:ACCU|temp[10] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 2.008      ;
+; 1.763 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[12] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 2.029      ;
+; 1.768 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[8]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 2.034      ;
+; 1.773 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[9]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 2.039      ;
+; 1.806 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[14] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 2.072      ;
+; 1.806 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[11] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 2.072      ;
+; 1.812 ; HAMMAMACCU:ACCU|temp[7]  ; HAMMAMACCU:ACCU|temp[13] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 2.078      ;
++-------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'CLK'                                                                                     ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                   ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------+
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; CLK   ; Rise       ; data1[0]                                 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; CLK   ; Rise       ; data1[0]                                 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; CLK   ; Rise       ; data1[1]                                 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; CLK   ; Rise       ; data1[1]                                 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; CLK   ; Rise       ; data1[2]                                 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; CLK   ; Rise       ; data1[2]                                 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; CLK   ; Rise       ; data1[3]                                 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; CLK   ; Rise       ; data1[3]                                 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; CLK   ; Rise       ; data1[4]                                 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; CLK   ; Rise       ; data1[4]                                 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; CLK   ; Rise       ; data1[5]                                 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; CLK   ; Rise       ; data1[5]                                 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; CLK   ; Rise       ; data1[6]                                 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; CLK   ; Rise       ; data1[6]                                 ;
+; -1.423 ; 0.500        ; 1.923          ; High Pulse Width ; CLK   ; Rise       ; data1[7]                                 ;
+; -1.423 ; 0.500        ; 1.923          ; Low Pulse Width  ; CLK   ; Rise       ; data1[7]                                 ;
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; CLK   ; Rise       ; CLK                                      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLK|combout                              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLK|combout                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; MUTLI|Mult0|auto_generated|mac_mult1|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; MUTLI|Mult0|auto_generated|mac_mult1|clk ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'CLKAccum'                                                                         ;
++--------+--------------+----------------+------------------+----------+------------+--------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock    ; Clock Edge ; Target                         ;
++--------+--------------+----------------+------------------+----------+------------+--------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; CLKAccum ; Rise       ; CLKAccum                       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[10]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[10]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[11]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[11]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[12]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[12]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[13]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[13]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[14]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[14]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[15]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[15]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[8]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[8]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[9]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[9]        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[0]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[0]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[10]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[10]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[11]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[11]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[12]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[12]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[13]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[13]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[14]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[14]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[15]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[15]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[1]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[1]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[2]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[2]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[3]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[3]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[4]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[4]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[5]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[5]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[6]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[6]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[7]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[7]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[8]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[8]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[9]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[9]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; CLKAccum|combout               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; CLKAccum|combout               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; CLKAccum~clk_delay_ctrl|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; CLKAccum~clk_delay_ctrl|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; CLKAccum~clk_delay_ctrl|clkout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; CLKAccum~clk_delay_ctrl|clkout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; CLKAccum~clkctrl|inclk[0]      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; CLKAccum~clkctrl|inclk[0]      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; CLKAccum~clkctrl|outclk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; CLKAccum~clkctrl|outclk        ;
++--------+--------------+----------------+------------------+----------+------------+--------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'CLK2'                                                                      ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                     ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; CLK2  ; Rise       ; CLK2                       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[0]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[0]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[1]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[1]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[2]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[2]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[3]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[3]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[4]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[4]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[5]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[5]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[6]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[6]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[7]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[7]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; CLK2|combout               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; CLK2|combout               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; CLK2~clk_delay_ctrl|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; CLK2~clk_delay_ctrl|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; CLK2~clk_delay_ctrl|clkout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; CLK2~clk_delay_ctrl|clkout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; CLK2~clkctrl|inclk[0]      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; CLK2~clkctrl|inclk[0]      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; CLK2~clkctrl|outclk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; CLK2~clkctrl|outclk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[0]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[0]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[1]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[1]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[2]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[2]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[3]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[3]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[4]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[4]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[5]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[5]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[6]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[6]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[7]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[7]|clk               ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; SRAM_DQ[*]  ; CLK        ; 3.550 ; 3.550 ; Rise       ; CLK             ;
+;  SRAM_DQ[0] ; CLK        ; 3.550 ; 3.550 ; Rise       ; CLK             ;
+;  SRAM_DQ[1] ; CLK        ; 3.109 ; 3.109 ; Rise       ; CLK             ;
+;  SRAM_DQ[2] ; CLK        ; 3.418 ; 3.418 ; Rise       ; CLK             ;
+;  SRAM_DQ[3] ; CLK        ; 3.317 ; 3.317 ; Rise       ; CLK             ;
+;  SRAM_DQ[4] ; CLK        ; 3.133 ; 3.133 ; Rise       ; CLK             ;
+;  SRAM_DQ[5] ; CLK        ; 3.042 ; 3.042 ; Rise       ; CLK             ;
+;  SRAM_DQ[6] ; CLK        ; 3.076 ; 3.076 ; Rise       ; CLK             ;
+;  SRAM_DQ[7] ; CLK        ; 2.975 ; 2.975 ; Rise       ; CLK             ;
+; SRAM_DQ[*]  ; CLK2       ; 4.449 ; 4.449 ; Rise       ; CLK2            ;
+;  SRAM_DQ[0] ; CLK2       ; 4.449 ; 4.449 ; Rise       ; CLK2            ;
+;  SRAM_DQ[1] ; CLK2       ; 4.232 ; 4.232 ; Rise       ; CLK2            ;
+;  SRAM_DQ[2] ; CLK2       ; 4.361 ; 4.361 ; Rise       ; CLK2            ;
+;  SRAM_DQ[3] ; CLK2       ; 4.298 ; 4.298 ; Rise       ; CLK2            ;
+;  SRAM_DQ[4] ; CLK2       ; 4.255 ; 4.255 ; Rise       ; CLK2            ;
+;  SRAM_DQ[5] ; CLK2       ; 4.390 ; 4.390 ; Rise       ; CLK2            ;
+;  SRAM_DQ[6] ; CLK2       ; 4.059 ; 4.059 ; Rise       ; CLK2            ;
+;  SRAM_DQ[7] ; CLK2       ; 3.970 ; 3.970 ; Rise       ; CLK2            ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Hold Times                                                                ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; SRAM_DQ[*]  ; CLK        ; -2.818 ; -2.818 ; Rise       ; CLK             ;
+;  SRAM_DQ[0] ; CLK        ; -3.393 ; -3.393 ; Rise       ; CLK             ;
+;  SRAM_DQ[1] ; CLK        ; -2.952 ; -2.952 ; Rise       ; CLK             ;
+;  SRAM_DQ[2] ; CLK        ; -3.261 ; -3.261 ; Rise       ; CLK             ;
+;  SRAM_DQ[3] ; CLK        ; -3.160 ; -3.160 ; Rise       ; CLK             ;
+;  SRAM_DQ[4] ; CLK        ; -2.976 ; -2.976 ; Rise       ; CLK             ;
+;  SRAM_DQ[5] ; CLK        ; -2.885 ; -2.885 ; Rise       ; CLK             ;
+;  SRAM_DQ[6] ; CLK        ; -2.919 ; -2.919 ; Rise       ; CLK             ;
+;  SRAM_DQ[7] ; CLK        ; -2.818 ; -2.818 ; Rise       ; CLK             ;
+; SRAM_DQ[*]  ; CLK2       ; -3.740 ; -3.740 ; Rise       ; CLK2            ;
+;  SRAM_DQ[0] ; CLK2       ; -4.219 ; -4.219 ; Rise       ; CLK2            ;
+;  SRAM_DQ[1] ; CLK2       ; -4.002 ; -4.002 ; Rise       ; CLK2            ;
+;  SRAM_DQ[2] ; CLK2       ; -4.131 ; -4.131 ; Rise       ; CLK2            ;
+;  SRAM_DQ[3] ; CLK2       ; -4.068 ; -4.068 ; Rise       ; CLK2            ;
+;  SRAM_DQ[4] ; CLK2       ; -4.025 ; -4.025 ; Rise       ; CLK2            ;
+;  SRAM_DQ[5] ; CLK2       ; -4.160 ; -4.160 ; Rise       ; CLK2            ;
+;  SRAM_DQ[6] ; CLK2       ; -3.829 ; -3.829 ; Rise       ; CLK2            ;
+;  SRAM_DQ[7] ; CLK2       ; -3.740 ; -3.740 ; Rise       ; CLK2            ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; seg1[*]   ; CLKAccum   ; 8.422 ; 8.422 ; Rise       ; CLKAccum        ;
+;  seg1[0]  ; CLKAccum   ; 8.172 ; 8.172 ; Rise       ; CLKAccum        ;
+;  seg1[1]  ; CLKAccum   ; 8.176 ; 8.176 ; Rise       ; CLKAccum        ;
+;  seg1[2]  ; CLKAccum   ; 8.173 ; 8.173 ; Rise       ; CLKAccum        ;
+;  seg1[3]  ; CLKAccum   ; 8.191 ; 8.191 ; Rise       ; CLKAccum        ;
+;  seg1[4]  ; CLKAccum   ; 8.422 ; 8.422 ; Rise       ; CLKAccum        ;
+;  seg1[5]  ; CLKAccum   ; 8.416 ; 8.416 ; Rise       ; CLKAccum        ;
+;  seg1[6]  ; CLKAccum   ; 8.413 ; 8.413 ; Rise       ; CLKAccum        ;
+; seg2[*]   ; CLKAccum   ; 9.006 ; 9.006 ; Rise       ; CLKAccum        ;
+;  seg2[0]  ; CLKAccum   ; 9.006 ; 9.006 ; Rise       ; CLKAccum        ;
+;  seg2[1]  ; CLKAccum   ; 8.990 ; 8.990 ; Rise       ; CLKAccum        ;
+;  seg2[2]  ; CLKAccum   ; 8.939 ; 8.939 ; Rise       ; CLKAccum        ;
+;  seg2[3]  ; CLKAccum   ; 8.922 ; 8.922 ; Rise       ; CLKAccum        ;
+;  seg2[4]  ; CLKAccum   ; 8.819 ; 8.819 ; Rise       ; CLKAccum        ;
+;  seg2[5]  ; CLKAccum   ; 8.806 ; 8.806 ; Rise       ; CLKAccum        ;
+;  seg2[6]  ; CLKAccum   ; 8.843 ; 8.843 ; Rise       ; CLKAccum        ;
+; seg3[*]   ; CLKAccum   ; 8.957 ; 8.957 ; Rise       ; CLKAccum        ;
+;  seg3[0]  ; CLKAccum   ; 8.905 ; 8.905 ; Rise       ; CLKAccum        ;
+;  seg3[1]  ; CLKAccum   ; 8.957 ; 8.957 ; Rise       ; CLKAccum        ;
+;  seg3[2]  ; CLKAccum   ; 8.849 ; 8.849 ; Rise       ; CLKAccum        ;
+;  seg3[3]  ; CLKAccum   ; 8.653 ; 8.653 ; Rise       ; CLKAccum        ;
+;  seg3[4]  ; CLKAccum   ; 8.682 ; 8.682 ; Rise       ; CLKAccum        ;
+;  seg3[5]  ; CLKAccum   ; 8.602 ; 8.602 ; Rise       ; CLKAccum        ;
+;  seg3[6]  ; CLKAccum   ; 8.805 ; 8.805 ; Rise       ; CLKAccum        ;
+; seg4[*]   ; CLKAccum   ; 8.912 ; 8.912 ; Rise       ; CLKAccum        ;
+;  seg4[0]  ; CLKAccum   ; 8.907 ; 8.907 ; Rise       ; CLKAccum        ;
+;  seg4[1]  ; CLKAccum   ; 8.844 ; 8.844 ; Rise       ; CLKAccum        ;
+;  seg4[2]  ; CLKAccum   ; 8.763 ; 8.763 ; Rise       ; CLKAccum        ;
+;  seg4[3]  ; CLKAccum   ; 8.912 ; 8.912 ; Rise       ; CLKAccum        ;
+;  seg4[4]  ; CLKAccum   ; 8.878 ; 8.878 ; Rise       ; CLKAccum        ;
+;  seg4[5]  ; CLKAccum   ; 8.860 ; 8.860 ; Rise       ; CLKAccum        ;
+;  seg4[6]  ; CLKAccum   ; 8.595 ; 8.595 ; Rise       ; CLKAccum        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; seg1[*]   ; CLKAccum   ; 7.674 ; 7.674 ; Rise       ; CLKAccum        ;
+;  seg1[0]  ; CLKAccum   ; 7.674 ; 7.674 ; Rise       ; CLKAccum        ;
+;  seg1[1]  ; CLKAccum   ; 7.678 ; 7.678 ; Rise       ; CLKAccum        ;
+;  seg1[2]  ; CLKAccum   ; 7.705 ; 7.705 ; Rise       ; CLKAccum        ;
+;  seg1[3]  ; CLKAccum   ; 7.691 ; 7.691 ; Rise       ; CLKAccum        ;
+;  seg1[4]  ; CLKAccum   ; 7.922 ; 7.922 ; Rise       ; CLKAccum        ;
+;  seg1[5]  ; CLKAccum   ; 7.915 ; 7.915 ; Rise       ; CLKAccum        ;
+;  seg1[6]  ; CLKAccum   ; 7.928 ; 7.928 ; Rise       ; CLKAccum        ;
+; seg2[*]   ; CLKAccum   ; 8.253 ; 8.253 ; Rise       ; CLKAccum        ;
+;  seg2[0]  ; CLKAccum   ; 8.454 ; 8.454 ; Rise       ; CLKAccum        ;
+;  seg2[1]  ; CLKAccum   ; 8.436 ; 8.436 ; Rise       ; CLKAccum        ;
+;  seg2[2]  ; CLKAccum   ; 8.387 ; 8.387 ; Rise       ; CLKAccum        ;
+;  seg2[3]  ; CLKAccum   ; 8.370 ; 8.370 ; Rise       ; CLKAccum        ;
+;  seg2[4]  ; CLKAccum   ; 8.267 ; 8.267 ; Rise       ; CLKAccum        ;
+;  seg2[5]  ; CLKAccum   ; 8.253 ; 8.253 ; Rise       ; CLKAccum        ;
+;  seg2[6]  ; CLKAccum   ; 8.286 ; 8.286 ; Rise       ; CLKAccum        ;
+; seg3[*]   ; CLKAccum   ; 8.270 ; 8.270 ; Rise       ; CLKAccum        ;
+;  seg3[0]  ; CLKAccum   ; 8.568 ; 8.568 ; Rise       ; CLKAccum        ;
+;  seg3[1]  ; CLKAccum   ; 8.621 ; 8.621 ; Rise       ; CLKAccum        ;
+;  seg3[2]  ; CLKAccum   ; 8.513 ; 8.513 ; Rise       ; CLKAccum        ;
+;  seg3[3]  ; CLKAccum   ; 8.315 ; 8.315 ; Rise       ; CLKAccum        ;
+;  seg3[4]  ; CLKAccum   ; 8.329 ; 8.329 ; Rise       ; CLKAccum        ;
+;  seg3[5]  ; CLKAccum   ; 8.270 ; 8.270 ; Rise       ; CLKAccum        ;
+;  seg3[6]  ; CLKAccum   ; 8.479 ; 8.479 ; Rise       ; CLKAccum        ;
+; seg4[*]   ; CLKAccum   ; 7.863 ; 7.863 ; Rise       ; CLKAccum        ;
+;  seg4[0]  ; CLKAccum   ; 8.166 ; 8.166 ; Rise       ; CLKAccum        ;
+;  seg4[1]  ; CLKAccum   ; 8.103 ; 8.103 ; Rise       ; CLKAccum        ;
+;  seg4[2]  ; CLKAccum   ; 8.021 ; 8.021 ; Rise       ; CLKAccum        ;
+;  seg4[3]  ; CLKAccum   ; 8.174 ; 8.174 ; Rise       ; CLKAccum        ;
+;  seg4[4]  ; CLKAccum   ; 8.169 ; 8.169 ; Rise       ; CLKAccum        ;
+;  seg4[5]  ; CLKAccum   ; 8.123 ; 8.123 ; Rise       ; CLKAccum        ;
+;  seg4[6]  ; CLKAccum   ; 7.863 ; 7.863 ; Rise       ; CLKAccum        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------+
+; Propagation Delay                                         ;
++------------+--------------+-------+-------+-------+-------+
+; Input Port ; Output Port  ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------+-------+-------+-------+-------+
+; DATAIN[0]  ; SRAM_DQ[0]   ; 9.428 ;       ;       ; 9.428 ;
+; DATAIN[1]  ; SRAM_DQ[1]   ; 8.688 ;       ;       ; 8.688 ;
+; DATAIN[2]  ; SRAM_DQ[2]   ; 9.186 ;       ;       ; 9.186 ;
+; DATAIN[3]  ; SRAM_DQ[3]   ; 9.143 ;       ;       ; 9.143 ;
+; DATAIN[4]  ; SRAM_DQ[4]   ; 9.018 ;       ;       ; 9.018 ;
+; DATAIN[5]  ; SRAM_DQ[5]   ; 9.263 ;       ;       ; 9.263 ;
+; DATAIN[6]  ; SRAM_DQ[6]   ; 9.212 ;       ;       ; 9.212 ;
+; DATAIN[7]  ; SRAM_DQ[7]   ; 9.036 ;       ;       ; 9.036 ;
+; SADD[0]    ; SRAM_ADDR[0] ; 8.361 ;       ;       ; 8.361 ;
+; SADD[1]    ; SRAM_ADDR[1] ; 8.291 ;       ;       ; 8.291 ;
+; SADD[2]    ; SRAM_ADDR[2] ; 8.483 ;       ;       ; 8.483 ;
+; SADD[3]    ; SRAM_ADDR[3] ; 8.512 ;       ;       ; 8.512 ;
+; SADD[4]    ; SRAM_ADDR[4] ; 8.570 ;       ;       ; 8.570 ;
+; wrEN       ; SRAM_DQ[0]   ; 9.615 ; 9.615 ; 9.615 ; 9.615 ;
+; wrEN       ; SRAM_DQ[1]   ; 9.624 ; 9.624 ; 9.624 ; 9.624 ;
+; wrEN       ; SRAM_DQ[2]   ; 9.398 ; 9.398 ; 9.398 ; 9.398 ;
+; wrEN       ; SRAM_DQ[3]   ; 9.378 ; 9.378 ; 9.378 ; 9.378 ;
+; wrEN       ; SRAM_DQ[4]   ; 9.351 ; 9.351 ; 9.351 ; 9.351 ;
+; wrEN       ; SRAM_DQ[5]   ; 9.351 ; 9.351 ; 9.351 ; 9.351 ;
+; wrEN       ; SRAM_DQ[6]   ; 9.351 ; 9.351 ; 9.351 ; 9.351 ;
+; wrEN       ; SRAM_DQ[7]   ; 8.852 ; 8.852 ; 8.852 ; 8.852 ;
+; wrEN       ; SRAM_WE_N    ;       ; 9.480 ; 9.480 ;       ;
++------------+--------------+-------+-------+-------+-------+
+
+
++-----------------------------------------------------------+
+; Minimum Propagation Delay                                 ;
++------------+--------------+-------+-------+-------+-------+
+; Input Port ; Output Port  ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------+-------+-------+-------+-------+
+; DATAIN[0]  ; SRAM_DQ[0]   ; 9.428 ;       ;       ; 9.428 ;
+; DATAIN[1]  ; SRAM_DQ[1]   ; 8.688 ;       ;       ; 8.688 ;
+; DATAIN[2]  ; SRAM_DQ[2]   ; 9.186 ;       ;       ; 9.186 ;
+; DATAIN[3]  ; SRAM_DQ[3]   ; 9.143 ;       ;       ; 9.143 ;
+; DATAIN[4]  ; SRAM_DQ[4]   ; 9.018 ;       ;       ; 9.018 ;
+; DATAIN[5]  ; SRAM_DQ[5]   ; 9.263 ;       ;       ; 9.263 ;
+; DATAIN[6]  ; SRAM_DQ[6]   ; 9.212 ;       ;       ; 9.212 ;
+; DATAIN[7]  ; SRAM_DQ[7]   ; 9.036 ;       ;       ; 9.036 ;
+; SADD[0]    ; SRAM_ADDR[0] ; 8.361 ;       ;       ; 8.361 ;
+; SADD[1]    ; SRAM_ADDR[1] ; 8.291 ;       ;       ; 8.291 ;
+; SADD[2]    ; SRAM_ADDR[2] ; 8.483 ;       ;       ; 8.483 ;
+; SADD[3]    ; SRAM_ADDR[3] ; 8.512 ;       ;       ; 8.512 ;
+; SADD[4]    ; SRAM_ADDR[4] ; 8.570 ;       ;       ; 8.570 ;
+; wrEN       ; SRAM_DQ[0]   ; 9.615 ; 9.615 ; 9.615 ; 9.615 ;
+; wrEN       ; SRAM_DQ[1]   ; 9.624 ; 9.624 ; 9.624 ; 9.624 ;
+; wrEN       ; SRAM_DQ[2]   ; 9.398 ; 9.398 ; 9.398 ; 9.398 ;
+; wrEN       ; SRAM_DQ[3]   ; 9.378 ; 9.378 ; 9.378 ; 9.378 ;
+; wrEN       ; SRAM_DQ[4]   ; 9.351 ; 9.351 ; 9.351 ; 9.351 ;
+; wrEN       ; SRAM_DQ[5]   ; 9.351 ; 9.351 ; 9.351 ; 9.351 ;
+; wrEN       ; SRAM_DQ[6]   ; 9.351 ; 9.351 ; 9.351 ; 9.351 ;
+; wrEN       ; SRAM_DQ[7]   ; 8.852 ; 8.852 ; 8.852 ; 8.852 ;
+; wrEN       ; SRAM_WE_N    ;       ; 9.480 ; 9.480 ;       ;
++------------+--------------+-------+-------+-------+-------+
+
+
++-----------------------------------+
+; Fast Model Setup Summary          ;
++----------+--------+---------------+
+; Clock    ; Slack  ; End Point TNS ;
++----------+--------+---------------+
+; CLKAccum ; -1.454 ; -18.487       ;
++----------+--------+---------------+
+
+
++----------------------------------+
+; Fast Model Hold Summary          ;
++----------+-------+---------------+
+; Clock    ; Slack ; End Point TNS ;
++----------+-------+---------------+
+; CLKAccum ; 0.356 ; 0.000         ;
++----------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++----------+--------+--------------------+
+; Clock    ; Slack  ; End Point TNS      ;
++----------+--------+--------------------+
+; CLK      ; -1.519 ; -25.526            ;
+; CLKAccum ; -1.222 ; -17.222            ;
+; CLK2     ; -1.222 ; -9.222             ;
++----------+--------+--------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'CLKAccum'                                                                                        ;
++--------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+; -1.454 ; data1[0]  ; HAMMAMACCU:ACCU|temp[15] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.686      ;
+; -1.423 ; data1[1]  ; HAMMAMACCU:ACCU|temp[15] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.655      ;
+; -1.419 ; data1[0]  ; HAMMAMACCU:ACCU|temp[14] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.651      ;
+; -1.388 ; data1[1]  ; HAMMAMACCU:ACCU|temp[14] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.620      ;
+; -1.384 ; data1[0]  ; HAMMAMACCU:ACCU|temp[13] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.616      ;
+; -1.375 ; data1[2]  ; HAMMAMACCU:ACCU|temp[15] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.607      ;
+; -1.353 ; data1[1]  ; HAMMAMACCU:ACCU|temp[13] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.585      ;
+; -1.349 ; data1[0]  ; HAMMAMACCU:ACCU|temp[12] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.581      ;
+; -1.341 ; data1[3]  ; HAMMAMACCU:ACCU|temp[15] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.573      ;
+; -1.341 ; data1[4]  ; HAMMAMACCU:ACCU|temp[15] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.573      ;
+; -1.340 ; data1[2]  ; HAMMAMACCU:ACCU|temp[14] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.572      ;
+; -1.318 ; data1[1]  ; HAMMAMACCU:ACCU|temp[12] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.550      ;
+; -1.314 ; data1[0]  ; HAMMAMACCU:ACCU|temp[11] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.546      ;
+; -1.306 ; data1[3]  ; HAMMAMACCU:ACCU|temp[14] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.538      ;
+; -1.306 ; data1[4]  ; HAMMAMACCU:ACCU|temp[14] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.538      ;
+; -1.305 ; data1[2]  ; HAMMAMACCU:ACCU|temp[13] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.537      ;
+; -1.283 ; data1[1]  ; HAMMAMACCU:ACCU|temp[11] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.515      ;
+; -1.281 ; data1[5]  ; HAMMAMACCU:ACCU|temp[15] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.513      ;
+; -1.279 ; data1[0]  ; HAMMAMACCU:ACCU|temp[10] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.511      ;
+; -1.271 ; data1[3]  ; HAMMAMACCU:ACCU|temp[13] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.503      ;
+; -1.271 ; data1[4]  ; HAMMAMACCU:ACCU|temp[13] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.503      ;
+; -1.270 ; data1[2]  ; HAMMAMACCU:ACCU|temp[12] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.502      ;
+; -1.248 ; data1[1]  ; HAMMAMACCU:ACCU|temp[10] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.480      ;
+; -1.246 ; data1[5]  ; HAMMAMACCU:ACCU|temp[14] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.478      ;
+; -1.244 ; data1[0]  ; HAMMAMACCU:ACCU|temp[9]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.476      ;
+; -1.236 ; data1[3]  ; HAMMAMACCU:ACCU|temp[12] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.468      ;
+; -1.236 ; data1[4]  ; HAMMAMACCU:ACCU|temp[12] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.468      ;
+; -1.235 ; data1[2]  ; HAMMAMACCU:ACCU|temp[11] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.467      ;
+; -1.221 ; data1[6]  ; HAMMAMACCU:ACCU|temp[15] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.453      ;
+; -1.213 ; data1[1]  ; HAMMAMACCU:ACCU|temp[9]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.445      ;
+; -1.211 ; data1[5]  ; HAMMAMACCU:ACCU|temp[13] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.443      ;
+; -1.209 ; data1[0]  ; HAMMAMACCU:ACCU|temp[8]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.441      ;
+; -1.201 ; data1[3]  ; HAMMAMACCU:ACCU|temp[11] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.433      ;
+; -1.201 ; data1[4]  ; HAMMAMACCU:ACCU|temp[11] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.433      ;
+; -1.200 ; data1[2]  ; HAMMAMACCU:ACCU|temp[10] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.432      ;
+; -1.186 ; data1[6]  ; HAMMAMACCU:ACCU|temp[14] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.418      ;
+; -1.178 ; data1[1]  ; HAMMAMACCU:ACCU|temp[8]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.410      ;
+; -1.176 ; data1[5]  ; HAMMAMACCU:ACCU|temp[12] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.408      ;
+; -1.166 ; data1[3]  ; HAMMAMACCU:ACCU|temp[10] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.398      ;
+; -1.166 ; data1[4]  ; HAMMAMACCU:ACCU|temp[10] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.398      ;
+; -1.165 ; data1[2]  ; HAMMAMACCU:ACCU|temp[9]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.397      ;
+; -1.151 ; data1[6]  ; HAMMAMACCU:ACCU|temp[13] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.383      ;
+; -1.141 ; data1[5]  ; HAMMAMACCU:ACCU|temp[11] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.373      ;
+; -1.131 ; data1[3]  ; HAMMAMACCU:ACCU|temp[9]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.363      ;
+; -1.131 ; data1[4]  ; HAMMAMACCU:ACCU|temp[9]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.363      ;
+; -1.130 ; data1[2]  ; HAMMAMACCU:ACCU|temp[8]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.362      ;
+; -1.116 ; data1[6]  ; HAMMAMACCU:ACCU|temp[12] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.348      ;
+; -1.115 ; data1[0]  ; HAMMAMACCU:ACCU|temp[7]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.347      ;
+; -1.106 ; data1[5]  ; HAMMAMACCU:ACCU|temp[10] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.338      ;
+; -1.104 ; data1[7]  ; HAMMAMACCU:ACCU|temp[15] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.336      ;
+; -1.096 ; data1[3]  ; HAMMAMACCU:ACCU|temp[8]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.328      ;
+; -1.096 ; data1[4]  ; HAMMAMACCU:ACCU|temp[8]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.328      ;
+; -1.084 ; data1[1]  ; HAMMAMACCU:ACCU|temp[7]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.316      ;
+; -1.081 ; data1[6]  ; HAMMAMACCU:ACCU|temp[11] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.313      ;
+; -1.080 ; data1[0]  ; HAMMAMACCU:ACCU|temp[6]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.312      ;
+; -1.071 ; data1[5]  ; HAMMAMACCU:ACCU|temp[9]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.303      ;
+; -1.069 ; data1[7]  ; HAMMAMACCU:ACCU|temp[14] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.301      ;
+; -1.049 ; data1[1]  ; HAMMAMACCU:ACCU|temp[6]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.281      ;
+; -1.046 ; data1[6]  ; HAMMAMACCU:ACCU|temp[10] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.278      ;
+; -1.045 ; data1[0]  ; HAMMAMACCU:ACCU|temp[5]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.277      ;
+; -1.036 ; data1[5]  ; HAMMAMACCU:ACCU|temp[8]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.268      ;
+; -1.036 ; data1[2]  ; HAMMAMACCU:ACCU|temp[7]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.268      ;
+; -1.034 ; data1[7]  ; HAMMAMACCU:ACCU|temp[13] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.266      ;
+; -1.014 ; data1[1]  ; HAMMAMACCU:ACCU|temp[5]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.246      ;
+; -1.011 ; data1[6]  ; HAMMAMACCU:ACCU|temp[9]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.243      ;
+; -1.010 ; data1[0]  ; HAMMAMACCU:ACCU|temp[4]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.242      ;
+; -1.002 ; data1[3]  ; HAMMAMACCU:ACCU|temp[7]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.234      ;
+; -1.002 ; data1[4]  ; HAMMAMACCU:ACCU|temp[7]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.234      ;
+; -1.001 ; data1[2]  ; HAMMAMACCU:ACCU|temp[6]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.233      ;
+; -0.999 ; data1[7]  ; HAMMAMACCU:ACCU|temp[12] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.231      ;
+; -0.979 ; data1[1]  ; HAMMAMACCU:ACCU|temp[4]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.211      ;
+; -0.976 ; data1[6]  ; HAMMAMACCU:ACCU|temp[8]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.208      ;
+; -0.975 ; data1[0]  ; HAMMAMACCU:ACCU|temp[3]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.207      ;
+; -0.967 ; data1[3]  ; HAMMAMACCU:ACCU|temp[6]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.199      ;
+; -0.967 ; data1[4]  ; HAMMAMACCU:ACCU|temp[6]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.199      ;
+; -0.966 ; data1[2]  ; HAMMAMACCU:ACCU|temp[5]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.198      ;
+; -0.964 ; data1[7]  ; HAMMAMACCU:ACCU|temp[11] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.196      ;
+; -0.963 ; data2[0]  ; HAMMAMACCU:ACCU|temp[15] ; CLK2         ; CLKAccum    ; 1.000        ; 0.007      ; 2.002      ;
+; -0.944 ; data1[1]  ; HAMMAMACCU:ACCU|temp[3]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.176      ;
+; -0.942 ; data1[5]  ; HAMMAMACCU:ACCU|temp[7]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.174      ;
+; -0.940 ; data1[0]  ; HAMMAMACCU:ACCU|temp[2]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.172      ;
+; -0.932 ; data1[3]  ; HAMMAMACCU:ACCU|temp[5]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.164      ;
+; -0.932 ; data1[4]  ; HAMMAMACCU:ACCU|temp[5]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.164      ;
+; -0.931 ; data1[2]  ; HAMMAMACCU:ACCU|temp[4]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.163      ;
+; -0.929 ; data1[7]  ; HAMMAMACCU:ACCU|temp[10] ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.161      ;
+; -0.928 ; data2[0]  ; HAMMAMACCU:ACCU|temp[14] ; CLK2         ; CLKAccum    ; 1.000        ; 0.007      ; 1.967      ;
+; -0.927 ; data2[1]  ; HAMMAMACCU:ACCU|temp[15] ; CLK2         ; CLKAccum    ; 1.000        ; 0.007      ; 1.966      ;
+; -0.909 ; data1[1]  ; HAMMAMACCU:ACCU|temp[2]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.141      ;
+; -0.907 ; data1[5]  ; HAMMAMACCU:ACCU|temp[6]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.139      ;
+; -0.905 ; data1[0]  ; HAMMAMACCU:ACCU|temp[1]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.137      ;
+; -0.896 ; data1[3]  ; HAMMAMACCU:ACCU|temp[4]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.128      ;
+; -0.896 ; data1[2]  ; HAMMAMACCU:ACCU|temp[3]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.128      ;
+; -0.894 ; data1[7]  ; HAMMAMACCU:ACCU|temp[9]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.126      ;
+; -0.893 ; data2[0]  ; HAMMAMACCU:ACCU|temp[13] ; CLK2         ; CLKAccum    ; 1.000        ; 0.007      ; 1.932      ;
+; -0.892 ; data2[1]  ; HAMMAMACCU:ACCU|temp[14] ; CLK2         ; CLKAccum    ; 1.000        ; 0.007      ; 1.931      ;
+; -0.887 ; data2[2]  ; HAMMAMACCU:ACCU|temp[15] ; CLK2         ; CLKAccum    ; 1.000        ; 0.007      ; 1.926      ;
+; -0.882 ; data1[6]  ; HAMMAMACCU:ACCU|temp[7]  ; CLK          ; CLKAccum    ; 1.000        ; -0.800     ; 1.114      ;
+; -0.858 ; data2[0]  ; HAMMAMACCU:ACCU|temp[12] ; CLK2         ; CLKAccum    ; 1.000        ; 0.007      ; 1.897      ;
+; -0.857 ; data2[1]  ; HAMMAMACCU:ACCU|temp[13] ; CLK2         ; CLKAccum    ; 1.000        ; 0.007      ; 1.896      ;
+; -0.852 ; data2[2]  ; HAMMAMACCU:ACCU|temp[14] ; CLK2         ; CLKAccum    ; 1.000        ; 0.007      ; 1.891      ;
++--------+-----------+--------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'CLKAccum'                                                                                                       ;
++-------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                ; To Node                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
+; 0.356 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[4]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.508      ;
+; 0.358 ; HAMMAMACCU:ACCU|temp[13] ; HAMMAMACCU:ACCU|temp[13] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.510      ;
+; 0.358 ; HAMMAMACCU:ACCU|temp[15] ; HAMMAMACCU:ACCU|temp[15] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.510      ;
+; 0.359 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[1]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.511      ;
+; 0.360 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[0]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; HAMMAMACCU:ACCU|temp[9]  ; HAMMAMACCU:ACCU|temp[9]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.360 ; HAMMAMACCU:ACCU|temp[11] ; HAMMAMACCU:ACCU|temp[11] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.512      ;
+; 0.368 ; HAMMAMACCU:ACCU|temp[8]  ; HAMMAMACCU:ACCU|temp[8]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.520      ;
+; 0.369 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[3]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.521      ;
+; 0.369 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[6]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.521      ;
+; 0.369 ; HAMMAMACCU:ACCU|temp[12] ; HAMMAMACCU:ACCU|temp[12] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.521      ;
+; 0.438 ; HAMMAMACCU:ACCU|temp[10] ; HAMMAMACCU:ACCU|temp[10] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.590      ;
+; 0.442 ; HAMMAMACCU:ACCU|temp[7]  ; HAMMAMACCU:ACCU|temp[7]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.594      ;
+; 0.443 ; HAMMAMACCU:ACCU|temp[5]  ; HAMMAMACCU:ACCU|temp[5]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.595      ;
+; 0.449 ; HAMMAMACCU:ACCU|temp[2]  ; HAMMAMACCU:ACCU|temp[2]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.601      ;
+; 0.452 ; HAMMAMACCU:ACCU|temp[14] ; HAMMAMACCU:ACCU|temp[14] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.604      ;
+; 0.494 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[5]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.646      ;
+; 0.495 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[1]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.647      ;
+; 0.496 ; HAMMAMACCU:ACCU|temp[13] ; HAMMAMACCU:ACCU|temp[14] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.648      ;
+; 0.497 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[2]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.649      ;
+; 0.498 ; HAMMAMACCU:ACCU|temp[11] ; HAMMAMACCU:ACCU|temp[12] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.650      ;
+; 0.498 ; HAMMAMACCU:ACCU|temp[9]  ; HAMMAMACCU:ACCU|temp[10] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.650      ;
+; 0.508 ; HAMMAMACCU:ACCU|temp[8]  ; HAMMAMACCU:ACCU|temp[9]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.660      ;
+; 0.509 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[4]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.661      ;
+; 0.509 ; HAMMAMACCU:ACCU|temp[12] ; HAMMAMACCU:ACCU|temp[13] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.661      ;
+; 0.509 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[7]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.661      ;
+; 0.529 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[6]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.681      ;
+; 0.530 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[2]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.682      ;
+; 0.531 ; HAMMAMACCU:ACCU|temp[13] ; HAMMAMACCU:ACCU|temp[15] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.683      ;
+; 0.532 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[3]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.684      ;
+; 0.533 ; HAMMAMACCU:ACCU|temp[9]  ; HAMMAMACCU:ACCU|temp[11] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.685      ;
+; 0.533 ; HAMMAMACCU:ACCU|temp[11] ; HAMMAMACCU:ACCU|temp[13] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.685      ;
+; 0.543 ; HAMMAMACCU:ACCU|temp[8]  ; HAMMAMACCU:ACCU|temp[10] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.695      ;
+; 0.544 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[5]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.696      ;
+; 0.544 ; HAMMAMACCU:ACCU|temp[12] ; HAMMAMACCU:ACCU|temp[14] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.696      ;
+; 0.564 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[7]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.716      ;
+; 0.565 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[3]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.717      ;
+; 0.567 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[4]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.719      ;
+; 0.568 ; HAMMAMACCU:ACCU|temp[9]  ; HAMMAMACCU:ACCU|temp[12] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.720      ;
+; 0.568 ; HAMMAMACCU:ACCU|temp[11] ; HAMMAMACCU:ACCU|temp[14] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.720      ;
+; 0.576 ; HAMMAMACCU:ACCU|temp[10] ; HAMMAMACCU:ACCU|temp[11] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.728      ;
+; 0.578 ; HAMMAMACCU:ACCU|temp[8]  ; HAMMAMACCU:ACCU|temp[11] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.730      ;
+; 0.579 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[6]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.731      ;
+; 0.579 ; HAMMAMACCU:ACCU|temp[12] ; HAMMAMACCU:ACCU|temp[15] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.731      ;
+; 0.581 ; HAMMAMACCU:ACCU|temp[5]  ; HAMMAMACCU:ACCU|temp[6]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.733      ;
+; 0.589 ; HAMMAMACCU:ACCU|temp[2]  ; HAMMAMACCU:ACCU|temp[3]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.741      ;
+; 0.592 ; HAMMAMACCU:ACCU|temp[14] ; HAMMAMACCU:ACCU|temp[15] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.744      ;
+; 0.600 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[4]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.752      ;
+; 0.602 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[5]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.754      ;
+; 0.603 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[8]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.755      ;
+; 0.603 ; HAMMAMACCU:ACCU|temp[9]  ; HAMMAMACCU:ACCU|temp[13] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.755      ;
+; 0.603 ; HAMMAMACCU:ACCU|temp[11] ; HAMMAMACCU:ACCU|temp[15] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.755      ;
+; 0.611 ; HAMMAMACCU:ACCU|temp[10] ; HAMMAMACCU:ACCU|temp[12] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.763      ;
+; 0.613 ; HAMMAMACCU:ACCU|temp[8]  ; HAMMAMACCU:ACCU|temp[12] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.765      ;
+; 0.614 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[7]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.766      ;
+; 0.616 ; HAMMAMACCU:ACCU|temp[5]  ; HAMMAMACCU:ACCU|temp[7]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.768      ;
+; 0.624 ; HAMMAMACCU:ACCU|temp[2]  ; HAMMAMACCU:ACCU|temp[4]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.776      ;
+; 0.635 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[5]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.787      ;
+; 0.636 ; HAMMAMACCU:ACCU|temp[7]  ; HAMMAMACCU:ACCU|temp[8]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.788      ;
+; 0.637 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[6]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.789      ;
+; 0.638 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[9]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.790      ;
+; 0.638 ; HAMMAMACCU:ACCU|temp[9]  ; HAMMAMACCU:ACCU|temp[14] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.790      ;
+; 0.646 ; HAMMAMACCU:ACCU|temp[10] ; HAMMAMACCU:ACCU|temp[13] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.798      ;
+; 0.648 ; HAMMAMACCU:ACCU|temp[8]  ; HAMMAMACCU:ACCU|temp[13] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.800      ;
+; 0.658 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[8]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.810      ;
+; 0.659 ; HAMMAMACCU:ACCU|temp[2]  ; HAMMAMACCU:ACCU|temp[5]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.811      ;
+; 0.670 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[6]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.822      ;
+; 0.671 ; HAMMAMACCU:ACCU|temp[7]  ; HAMMAMACCU:ACCU|temp[9]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.823      ;
+; 0.672 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[7]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.824      ;
+; 0.673 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[10] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.825      ;
+; 0.673 ; HAMMAMACCU:ACCU|temp[9]  ; HAMMAMACCU:ACCU|temp[15] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.825      ;
+; 0.681 ; HAMMAMACCU:ACCU|temp[10] ; HAMMAMACCU:ACCU|temp[14] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.833      ;
+; 0.683 ; HAMMAMACCU:ACCU|temp[8]  ; HAMMAMACCU:ACCU|temp[14] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.835      ;
+; 0.693 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[9]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.845      ;
+; 0.694 ; HAMMAMACCU:ACCU|temp[2]  ; HAMMAMACCU:ACCU|temp[6]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.846      ;
+; 0.705 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[7]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.857      ;
+; 0.706 ; HAMMAMACCU:ACCU|temp[7]  ; HAMMAMACCU:ACCU|temp[10] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.858      ;
+; 0.708 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[11] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.860      ;
+; 0.708 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[8]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.860      ;
+; 0.710 ; HAMMAMACCU:ACCU|temp[5]  ; HAMMAMACCU:ACCU|temp[8]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.862      ;
+; 0.716 ; HAMMAMACCU:ACCU|temp[10] ; HAMMAMACCU:ACCU|temp[15] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.868      ;
+; 0.718 ; HAMMAMACCU:ACCU|temp[8]  ; HAMMAMACCU:ACCU|temp[15] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.870      ;
+; 0.728 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[10] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.880      ;
+; 0.729 ; HAMMAMACCU:ACCU|temp[2]  ; HAMMAMACCU:ACCU|temp[7]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.881      ;
+; 0.741 ; HAMMAMACCU:ACCU|temp[7]  ; HAMMAMACCU:ACCU|temp[11] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.893      ;
+; 0.743 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[12] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.895      ;
+; 0.743 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[9]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.895      ;
+; 0.745 ; HAMMAMACCU:ACCU|temp[5]  ; HAMMAMACCU:ACCU|temp[9]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.897      ;
+; 0.763 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[11] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.915      ;
+; 0.766 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[8]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.918      ;
+; 0.776 ; HAMMAMACCU:ACCU|temp[7]  ; HAMMAMACCU:ACCU|temp[12] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.928      ;
+; 0.778 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[13] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.930      ;
+; 0.778 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[10] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.930      ;
+; 0.780 ; HAMMAMACCU:ACCU|temp[5]  ; HAMMAMACCU:ACCU|temp[10] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.932      ;
+; 0.798 ; HAMMAMACCU:ACCU|temp[4]  ; HAMMAMACCU:ACCU|temp[12] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.950      ;
+; 0.799 ; HAMMAMACCU:ACCU|temp[0]  ; HAMMAMACCU:ACCU|temp[8]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.951      ;
+; 0.801 ; HAMMAMACCU:ACCU|temp[1]  ; HAMMAMACCU:ACCU|temp[9]  ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.953      ;
+; 0.811 ; HAMMAMACCU:ACCU|temp[7]  ; HAMMAMACCU:ACCU|temp[13] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.963      ;
+; 0.813 ; HAMMAMACCU:ACCU|temp[6]  ; HAMMAMACCU:ACCU|temp[14] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.965      ;
+; 0.813 ; HAMMAMACCU:ACCU|temp[3]  ; HAMMAMACCU:ACCU|temp[11] ; CLKAccum     ; CLKAccum    ; 0.000        ; 0.000      ; 0.965      ;
++-------+--------------------------+--------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'CLK'                                                                                     ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                   ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------+
+; -1.519 ; 0.500        ; 2.019          ; High Pulse Width ; CLK   ; Rise       ; data1[0]                                 ;
+; -1.519 ; 0.500        ; 2.019          ; Low Pulse Width  ; CLK   ; Rise       ; data1[0]                                 ;
+; -1.519 ; 0.500        ; 2.019          ; High Pulse Width ; CLK   ; Rise       ; data1[1]                                 ;
+; -1.519 ; 0.500        ; 2.019          ; Low Pulse Width  ; CLK   ; Rise       ; data1[1]                                 ;
+; -1.519 ; 0.500        ; 2.019          ; High Pulse Width ; CLK   ; Rise       ; data1[2]                                 ;
+; -1.519 ; 0.500        ; 2.019          ; Low Pulse Width  ; CLK   ; Rise       ; data1[2]                                 ;
+; -1.519 ; 0.500        ; 2.019          ; High Pulse Width ; CLK   ; Rise       ; data1[3]                                 ;
+; -1.519 ; 0.500        ; 2.019          ; Low Pulse Width  ; CLK   ; Rise       ; data1[3]                                 ;
+; -1.519 ; 0.500        ; 2.019          ; High Pulse Width ; CLK   ; Rise       ; data1[4]                                 ;
+; -1.519 ; 0.500        ; 2.019          ; Low Pulse Width  ; CLK   ; Rise       ; data1[4]                                 ;
+; -1.519 ; 0.500        ; 2.019          ; High Pulse Width ; CLK   ; Rise       ; data1[5]                                 ;
+; -1.519 ; 0.500        ; 2.019          ; Low Pulse Width  ; CLK   ; Rise       ; data1[5]                                 ;
+; -1.519 ; 0.500        ; 2.019          ; High Pulse Width ; CLK   ; Rise       ; data1[6]                                 ;
+; -1.519 ; 0.500        ; 2.019          ; Low Pulse Width  ; CLK   ; Rise       ; data1[6]                                 ;
+; -1.519 ; 0.500        ; 2.019          ; High Pulse Width ; CLK   ; Rise       ; data1[7]                                 ;
+; -1.519 ; 0.500        ; 2.019          ; Low Pulse Width  ; CLK   ; Rise       ; data1[7]                                 ;
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; CLK   ; Rise       ; CLK                                      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLK|combout                              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLK|combout                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; MUTLI|Mult0|auto_generated|mac_mult1|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; MUTLI|Mult0|auto_generated|mac_mult1|clk ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'CLKAccum'                                                                         ;
++--------+--------------+----------------+------------------+----------+------------+--------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock    ; Clock Edge ; Target                         ;
++--------+--------------+----------------+------------------+----------+------------+--------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; CLKAccum ; Rise       ; CLKAccum                       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[0]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[10]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[10]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[11]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[11]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[12]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[12]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[13]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[13]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[14]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[14]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[15]       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[15]       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[1]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[2]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[3]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[4]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[5]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[6]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[7]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[8]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[8]        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[9]        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; HAMMAMACCU:ACCU|temp[9]        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[0]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[0]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[10]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[10]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[11]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[11]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[12]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[12]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[13]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[13]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[14]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[14]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[15]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[15]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[1]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[1]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[2]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[2]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[3]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[3]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[4]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[4]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[5]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[5]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[6]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[6]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[7]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[7]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[8]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[8]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; ACCU|temp[9]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; ACCU|temp[9]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; CLKAccum|combout               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; CLKAccum|combout               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; CLKAccum~clk_delay_ctrl|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; CLKAccum~clk_delay_ctrl|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; CLKAccum~clk_delay_ctrl|clkout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; CLKAccum~clk_delay_ctrl|clkout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; CLKAccum~clkctrl|inclk[0]      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; CLKAccum~clkctrl|inclk[0]      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLKAccum ; Rise       ; CLKAccum~clkctrl|outclk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLKAccum ; Rise       ; CLKAccum~clkctrl|outclk        ;
++--------+--------------+----------------+------------------+----------+------------+--------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'CLK2'                                                                      ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                     ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; CLK2  ; Rise       ; CLK2                       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[0]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[0]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[1]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[1]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[2]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[2]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[3]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[3]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[4]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[4]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[5]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[5]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[6]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[6]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[7]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[7]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; CLK2|combout               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; CLK2|combout               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; CLK2~clk_delay_ctrl|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; CLK2~clk_delay_ctrl|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; CLK2~clk_delay_ctrl|clkout ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; CLK2~clk_delay_ctrl|clkout ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; CLK2~clkctrl|inclk[0]      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; CLK2~clkctrl|inclk[0]      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; CLK2~clkctrl|outclk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; CLK2~clkctrl|outclk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[0]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[0]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[1]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[1]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[2]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[2]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[3]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[3]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[4]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[4]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[5]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[5]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[6]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[6]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK2  ; Rise       ; data2[7]|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK2  ; Rise       ; data2[7]|clk               ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; SRAM_DQ[*]  ; CLK        ; 1.944 ; 1.944 ; Rise       ; CLK             ;
+;  SRAM_DQ[0] ; CLK        ; 1.944 ; 1.944 ; Rise       ; CLK             ;
+;  SRAM_DQ[1] ; CLK        ; 1.760 ; 1.760 ; Rise       ; CLK             ;
+;  SRAM_DQ[2] ; CLK        ; 1.901 ; 1.901 ; Rise       ; CLK             ;
+;  SRAM_DQ[3] ; CLK        ; 1.837 ; 1.837 ; Rise       ; CLK             ;
+;  SRAM_DQ[4] ; CLK        ; 1.748 ; 1.748 ; Rise       ; CLK             ;
+;  SRAM_DQ[5] ; CLK        ; 1.692 ; 1.692 ; Rise       ; CLK             ;
+;  SRAM_DQ[6] ; CLK        ; 1.723 ; 1.723 ; Rise       ; CLK             ;
+;  SRAM_DQ[7] ; CLK        ; 1.659 ; 1.659 ; Rise       ; CLK             ;
+; SRAM_DQ[*]  ; CLK2       ; 2.431 ; 2.431 ; Rise       ; CLK2            ;
+;  SRAM_DQ[0] ; CLK2       ; 2.431 ; 2.431 ; Rise       ; CLK2            ;
+;  SRAM_DQ[1] ; CLK2       ; 2.342 ; 2.342 ; Rise       ; CLK2            ;
+;  SRAM_DQ[2] ; CLK2       ; 2.386 ; 2.386 ; Rise       ; CLK2            ;
+;  SRAM_DQ[3] ; CLK2       ; 2.332 ; 2.332 ; Rise       ; CLK2            ;
+;  SRAM_DQ[4] ; CLK2       ; 2.332 ; 2.332 ; Rise       ; CLK2            ;
+;  SRAM_DQ[5] ; CLK2       ; 2.375 ; 2.375 ; Rise       ; CLK2            ;
+;  SRAM_DQ[6] ; CLK2       ; 2.218 ; 2.218 ; Rise       ; CLK2            ;
+;  SRAM_DQ[7] ; CLK2       ; 2.162 ; 2.162 ; Rise       ; CLK2            ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Hold Times                                                                ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; SRAM_DQ[*]  ; CLK        ; -1.591 ; -1.591 ; Rise       ; CLK             ;
+;  SRAM_DQ[0] ; CLK        ; -1.876 ; -1.876 ; Rise       ; CLK             ;
+;  SRAM_DQ[1] ; CLK        ; -1.692 ; -1.692 ; Rise       ; CLK             ;
+;  SRAM_DQ[2] ; CLK        ; -1.833 ; -1.833 ; Rise       ; CLK             ;
+;  SRAM_DQ[3] ; CLK        ; -1.769 ; -1.769 ; Rise       ; CLK             ;
+;  SRAM_DQ[4] ; CLK        ; -1.680 ; -1.680 ; Rise       ; CLK             ;
+;  SRAM_DQ[5] ; CLK        ; -1.624 ; -1.624 ; Rise       ; CLK             ;
+;  SRAM_DQ[6] ; CLK        ; -1.655 ; -1.655 ; Rise       ; CLK             ;
+;  SRAM_DQ[7] ; CLK        ; -1.591 ; -1.591 ; Rise       ; CLK             ;
+; SRAM_DQ[*]  ; CLK2       ; -2.042 ; -2.042 ; Rise       ; CLK2            ;
+;  SRAM_DQ[0] ; CLK2       ; -2.311 ; -2.311 ; Rise       ; CLK2            ;
+;  SRAM_DQ[1] ; CLK2       ; -2.222 ; -2.222 ; Rise       ; CLK2            ;
+;  SRAM_DQ[2] ; CLK2       ; -2.266 ; -2.266 ; Rise       ; CLK2            ;
+;  SRAM_DQ[3] ; CLK2       ; -2.212 ; -2.212 ; Rise       ; CLK2            ;
+;  SRAM_DQ[4] ; CLK2       ; -2.212 ; -2.212 ; Rise       ; CLK2            ;
+;  SRAM_DQ[5] ; CLK2       ; -2.255 ; -2.255 ; Rise       ; CLK2            ;
+;  SRAM_DQ[6] ; CLK2       ; -2.098 ; -2.098 ; Rise       ; CLK2            ;
+;  SRAM_DQ[7] ; CLK2       ; -2.042 ; -2.042 ; Rise       ; CLK2            ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; seg1[*]   ; CLKAccum   ; 4.535 ; 4.535 ; Rise       ; CLKAccum        ;
+;  seg1[0]  ; CLKAccum   ; 4.401 ; 4.401 ; Rise       ; CLKAccum        ;
+;  seg1[1]  ; CLKAccum   ; 4.403 ; 4.403 ; Rise       ; CLKAccum        ;
+;  seg1[2]  ; CLKAccum   ; 4.423 ; 4.423 ; Rise       ; CLKAccum        ;
+;  seg1[3]  ; CLKAccum   ; 4.417 ; 4.417 ; Rise       ; CLKAccum        ;
+;  seg1[4]  ; CLKAccum   ; 4.522 ; 4.522 ; Rise       ; CLKAccum        ;
+;  seg1[5]  ; CLKAccum   ; 4.509 ; 4.509 ; Rise       ; CLKAccum        ;
+;  seg1[6]  ; CLKAccum   ; 4.535 ; 4.535 ; Rise       ; CLKAccum        ;
+; seg2[*]   ; CLKAccum   ; 4.857 ; 4.857 ; Rise       ; CLKAccum        ;
+;  seg2[0]  ; CLKAccum   ; 4.857 ; 4.857 ; Rise       ; CLKAccum        ;
+;  seg2[1]  ; CLKAccum   ; 4.837 ; 4.837 ; Rise       ; CLKAccum        ;
+;  seg2[2]  ; CLKAccum   ; 4.815 ; 4.815 ; Rise       ; CLKAccum        ;
+;  seg2[3]  ; CLKAccum   ; 4.796 ; 4.796 ; Rise       ; CLKAccum        ;
+;  seg2[4]  ; CLKAccum   ; 4.745 ; 4.745 ; Rise       ; CLKAccum        ;
+;  seg2[5]  ; CLKAccum   ; 4.799 ; 4.799 ; Rise       ; CLKAccum        ;
+;  seg2[6]  ; CLKAccum   ; 4.818 ; 4.818 ; Rise       ; CLKAccum        ;
+; seg3[*]   ; CLKAccum   ; 4.728 ; 4.728 ; Rise       ; CLKAccum        ;
+;  seg3[0]  ; CLKAccum   ; 4.692 ; 4.692 ; Rise       ; CLKAccum        ;
+;  seg3[1]  ; CLKAccum   ; 4.728 ; 4.728 ; Rise       ; CLKAccum        ;
+;  seg3[2]  ; CLKAccum   ; 4.676 ; 4.676 ; Rise       ; CLKAccum        ;
+;  seg3[3]  ; CLKAccum   ; 4.596 ; 4.596 ; Rise       ; CLKAccum        ;
+;  seg3[4]  ; CLKAccum   ; 4.604 ; 4.604 ; Rise       ; CLKAccum        ;
+;  seg3[5]  ; CLKAccum   ; 4.545 ; 4.545 ; Rise       ; CLKAccum        ;
+;  seg3[6]  ; CLKAccum   ; 4.643 ; 4.643 ; Rise       ; CLKAccum        ;
+; seg4[*]   ; CLKAccum   ; 4.708 ; 4.708 ; Rise       ; CLKAccum        ;
+;  seg4[0]  ; CLKAccum   ; 4.697 ; 4.697 ; Rise       ; CLKAccum        ;
+;  seg4[1]  ; CLKAccum   ; 4.666 ; 4.666 ; Rise       ; CLKAccum        ;
+;  seg4[2]  ; CLKAccum   ; 4.633 ; 4.633 ; Rise       ; CLKAccum        ;
+;  seg4[3]  ; CLKAccum   ; 4.708 ; 4.708 ; Rise       ; CLKAccum        ;
+;  seg4[4]  ; CLKAccum   ; 4.704 ; 4.704 ; Rise       ; CLKAccum        ;
+;  seg4[5]  ; CLKAccum   ; 4.680 ; 4.680 ; Rise       ; CLKAccum        ;
+;  seg4[6]  ; CLKAccum   ; 4.556 ; 4.556 ; Rise       ; CLKAccum        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; seg1[*]   ; CLKAccum   ; 4.196 ; 4.196 ; Rise       ; CLKAccum        ;
+;  seg1[0]  ; CLKAccum   ; 4.196 ; 4.196 ; Rise       ; CLKAccum        ;
+;  seg1[1]  ; CLKAccum   ; 4.198 ; 4.198 ; Rise       ; CLKAccum        ;
+;  seg1[2]  ; CLKAccum   ; 4.218 ; 4.218 ; Rise       ; CLKAccum        ;
+;  seg1[3]  ; CLKAccum   ; 4.210 ; 4.210 ; Rise       ; CLKAccum        ;
+;  seg1[4]  ; CLKAccum   ; 4.307 ; 4.307 ; Rise       ; CLKAccum        ;
+;  seg1[5]  ; CLKAccum   ; 4.300 ; 4.300 ; Rise       ; CLKAccum        ;
+;  seg1[6]  ; CLKAccum   ; 4.321 ; 4.321 ; Rise       ; CLKAccum        ;
+; seg2[*]   ; CLKAccum   ; 4.385 ; 4.385 ; Rise       ; CLKAccum        ;
+;  seg2[0]  ; CLKAccum   ; 4.493 ; 4.493 ; Rise       ; CLKAccum        ;
+;  seg2[1]  ; CLKAccum   ; 4.473 ; 4.473 ; Rise       ; CLKAccum        ;
+;  seg2[2]  ; CLKAccum   ; 4.452 ; 4.452 ; Rise       ; CLKAccum        ;
+;  seg2[3]  ; CLKAccum   ; 4.434 ; 4.434 ; Rise       ; CLKAccum        ;
+;  seg2[4]  ; CLKAccum   ; 4.385 ; 4.385 ; Rise       ; CLKAccum        ;
+;  seg2[5]  ; CLKAccum   ; 4.436 ; 4.436 ; Rise       ; CLKAccum        ;
+;  seg2[6]  ; CLKAccum   ; 4.451 ; 4.451 ; Rise       ; CLKAccum        ;
+; seg3[*]   ; CLKAccum   ; 4.403 ; 4.403 ; Rise       ; CLKAccum        ;
+;  seg3[0]  ; CLKAccum   ; 4.548 ; 4.548 ; Rise       ; CLKAccum        ;
+;  seg3[1]  ; CLKAccum   ; 4.584 ; 4.584 ; Rise       ; CLKAccum        ;
+;  seg3[2]  ; CLKAccum   ; 4.532 ; 4.532 ; Rise       ; CLKAccum        ;
+;  seg3[3]  ; CLKAccum   ; 4.452 ; 4.452 ; Rise       ; CLKAccum        ;
+;  seg3[4]  ; CLKAccum   ; 4.465 ; 4.465 ; Rise       ; CLKAccum        ;
+;  seg3[5]  ; CLKAccum   ; 4.403 ; 4.403 ; Rise       ; CLKAccum        ;
+;  seg3[6]  ; CLKAccum   ; 4.505 ; 4.505 ; Rise       ; CLKAccum        ;
+; seg4[*]   ; CLKAccum   ; 4.269 ; 4.269 ; Rise       ; CLKAccum        ;
+;  seg4[0]  ; CLKAccum   ; 4.409 ; 4.409 ; Rise       ; CLKAccum        ;
+;  seg4[1]  ; CLKAccum   ; 4.373 ; 4.373 ; Rise       ; CLKAccum        ;
+;  seg4[2]  ; CLKAccum   ; 4.342 ; 4.342 ; Rise       ; CLKAccum        ;
+;  seg4[3]  ; CLKAccum   ; 4.419 ; 4.419 ; Rise       ; CLKAccum        ;
+;  seg4[4]  ; CLKAccum   ; 4.415 ; 4.415 ; Rise       ; CLKAccum        ;
+;  seg4[5]  ; CLKAccum   ; 4.391 ; 4.391 ; Rise       ; CLKAccum        ;
+;  seg4[6]  ; CLKAccum   ; 4.269 ; 4.269 ; Rise       ; CLKAccum        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------+
+; Propagation Delay                                         ;
++------------+--------------+-------+-------+-------+-------+
+; Input Port ; Output Port  ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------+-------+-------+-------+-------+
+; DATAIN[0]  ; SRAM_DQ[0]   ; 5.363 ;       ;       ; 5.363 ;
+; DATAIN[1]  ; SRAM_DQ[1]   ; 5.023 ;       ;       ; 5.023 ;
+; DATAIN[2]  ; SRAM_DQ[2]   ; 5.250 ;       ;       ; 5.250 ;
+; DATAIN[3]  ; SRAM_DQ[3]   ; 5.215 ;       ;       ; 5.215 ;
+; DATAIN[4]  ; SRAM_DQ[4]   ; 5.137 ;       ;       ; 5.137 ;
+; DATAIN[5]  ; SRAM_DQ[5]   ; 5.289 ;       ;       ; 5.289 ;
+; DATAIN[6]  ; SRAM_DQ[6]   ; 5.254 ;       ;       ; 5.254 ;
+; DATAIN[7]  ; SRAM_DQ[7]   ; 5.146 ;       ;       ; 5.146 ;
+; SADD[0]    ; SRAM_ADDR[0] ; 4.877 ;       ;       ; 4.877 ;
+; SADD[1]    ; SRAM_ADDR[1] ; 4.812 ;       ;       ; 4.812 ;
+; SADD[2]    ; SRAM_ADDR[2] ; 4.882 ;       ;       ; 4.882 ;
+; SADD[3]    ; SRAM_ADDR[3] ; 4.913 ;       ;       ; 4.913 ;
+; SADD[4]    ; SRAM_ADDR[4] ; 4.947 ;       ;       ; 4.947 ;
+; wrEN       ; SRAM_DQ[0]   ; 5.471 ; 5.471 ; 5.471 ; 5.471 ;
+; wrEN       ; SRAM_DQ[1]   ; 5.479 ; 5.479 ; 5.479 ; 5.479 ;
+; wrEN       ; SRAM_DQ[2]   ; 5.379 ; 5.379 ; 5.379 ; 5.379 ;
+; wrEN       ; SRAM_DQ[3]   ; 5.359 ; 5.359 ; 5.359 ; 5.359 ;
+; wrEN       ; SRAM_DQ[4]   ; 5.330 ; 5.330 ; 5.330 ; 5.330 ;
+; wrEN       ; SRAM_DQ[5]   ; 5.330 ; 5.330 ; 5.330 ; 5.330 ;
+; wrEN       ; SRAM_DQ[6]   ; 5.330 ; 5.330 ; 5.330 ; 5.330 ;
+; wrEN       ; SRAM_DQ[7]   ; 5.101 ; 5.101 ; 5.101 ; 5.101 ;
+; wrEN       ; SRAM_WE_N    ;       ; 5.434 ; 5.434 ;       ;
++------------+--------------+-------+-------+-------+-------+
+
+
++-----------------------------------------------------------+
+; Minimum Propagation Delay                                 ;
++------------+--------------+-------+-------+-------+-------+
+; Input Port ; Output Port  ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------+-------+-------+-------+-------+
+; DATAIN[0]  ; SRAM_DQ[0]   ; 5.363 ;       ;       ; 5.363 ;
+; DATAIN[1]  ; SRAM_DQ[1]   ; 5.023 ;       ;       ; 5.023 ;
+; DATAIN[2]  ; SRAM_DQ[2]   ; 5.250 ;       ;       ; 5.250 ;
+; DATAIN[3]  ; SRAM_DQ[3]   ; 5.215 ;       ;       ; 5.215 ;
+; DATAIN[4]  ; SRAM_DQ[4]   ; 5.137 ;       ;       ; 5.137 ;
+; DATAIN[5]  ; SRAM_DQ[5]   ; 5.289 ;       ;       ; 5.289 ;
+; DATAIN[6]  ; SRAM_DQ[6]   ; 5.254 ;       ;       ; 5.254 ;
+; DATAIN[7]  ; SRAM_DQ[7]   ; 5.146 ;       ;       ; 5.146 ;
+; SADD[0]    ; SRAM_ADDR[0] ; 4.877 ;       ;       ; 4.877 ;
+; SADD[1]    ; SRAM_ADDR[1] ; 4.812 ;       ;       ; 4.812 ;
+; SADD[2]    ; SRAM_ADDR[2] ; 4.882 ;       ;       ; 4.882 ;
+; SADD[3]    ; SRAM_ADDR[3] ; 4.913 ;       ;       ; 4.913 ;
+; SADD[4]    ; SRAM_ADDR[4] ; 4.947 ;       ;       ; 4.947 ;
+; wrEN       ; SRAM_DQ[0]   ; 5.471 ; 5.471 ; 5.471 ; 5.471 ;
+; wrEN       ; SRAM_DQ[1]   ; 5.479 ; 5.479 ; 5.479 ; 5.479 ;
+; wrEN       ; SRAM_DQ[2]   ; 5.379 ; 5.379 ; 5.379 ; 5.379 ;
+; wrEN       ; SRAM_DQ[3]   ; 5.359 ; 5.359 ; 5.359 ; 5.359 ;
+; wrEN       ; SRAM_DQ[4]   ; 5.330 ; 5.330 ; 5.330 ; 5.330 ;
+; wrEN       ; SRAM_DQ[5]   ; 5.330 ; 5.330 ; 5.330 ; 5.330 ;
+; wrEN       ; SRAM_DQ[6]   ; 5.330 ; 5.330 ; 5.330 ; 5.330 ;
+; wrEN       ; SRAM_DQ[7]   ; 5.101 ; 5.101 ; 5.101 ; 5.101 ;
+; wrEN       ; SRAM_WE_N    ;       ; 5.434 ; 5.434 ;       ;
++------------+--------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -5.523  ; 0.356 ; N/A      ; N/A     ; -1.519              ;
+;  CLK             ; N/A     ; N/A   ; N/A      ; N/A     ; -1.519              ;
+;  CLK2            ; N/A     ; N/A   ; N/A      ; N/A     ; -1.222              ;
+;  CLKAccum        ; -5.523  ; 0.356 ; N/A      ; N/A     ; -1.222              ;
+; Design-wide TNS  ; -78.828 ; 0.0   ; 0.0      ; 0.0     ; -51.97              ;
+;  CLK             ; N/A     ; N/A   ; N/A      ; N/A     ; -25.526             ;
+;  CLK2            ; N/A     ; N/A   ; N/A      ; N/A     ; -9.222              ;
+;  CLKAccum        ; -78.828 ; 0.000 ; N/A      ; N/A     ; -17.222             ;
++------------------+---------+-------+----------+---------+---------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; SRAM_DQ[*]  ; CLK        ; 3.550 ; 3.550 ; Rise       ; CLK             ;
+;  SRAM_DQ[0] ; CLK        ; 3.550 ; 3.550 ; Rise       ; CLK             ;
+;  SRAM_DQ[1] ; CLK        ; 3.109 ; 3.109 ; Rise       ; CLK             ;
+;  SRAM_DQ[2] ; CLK        ; 3.418 ; 3.418 ; Rise       ; CLK             ;
+;  SRAM_DQ[3] ; CLK        ; 3.317 ; 3.317 ; Rise       ; CLK             ;
+;  SRAM_DQ[4] ; CLK        ; 3.133 ; 3.133 ; Rise       ; CLK             ;
+;  SRAM_DQ[5] ; CLK        ; 3.042 ; 3.042 ; Rise       ; CLK             ;
+;  SRAM_DQ[6] ; CLK        ; 3.076 ; 3.076 ; Rise       ; CLK             ;
+;  SRAM_DQ[7] ; CLK        ; 2.975 ; 2.975 ; Rise       ; CLK             ;
+; SRAM_DQ[*]  ; CLK2       ; 4.449 ; 4.449 ; Rise       ; CLK2            ;
+;  SRAM_DQ[0] ; CLK2       ; 4.449 ; 4.449 ; Rise       ; CLK2            ;
+;  SRAM_DQ[1] ; CLK2       ; 4.232 ; 4.232 ; Rise       ; CLK2            ;
+;  SRAM_DQ[2] ; CLK2       ; 4.361 ; 4.361 ; Rise       ; CLK2            ;
+;  SRAM_DQ[3] ; CLK2       ; 4.298 ; 4.298 ; Rise       ; CLK2            ;
+;  SRAM_DQ[4] ; CLK2       ; 4.255 ; 4.255 ; Rise       ; CLK2            ;
+;  SRAM_DQ[5] ; CLK2       ; 4.390 ; 4.390 ; Rise       ; CLK2            ;
+;  SRAM_DQ[6] ; CLK2       ; 4.059 ; 4.059 ; Rise       ; CLK2            ;
+;  SRAM_DQ[7] ; CLK2       ; 3.970 ; 3.970 ; Rise       ; CLK2            ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Hold Times                                                                ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; SRAM_DQ[*]  ; CLK        ; -1.591 ; -1.591 ; Rise       ; CLK             ;
+;  SRAM_DQ[0] ; CLK        ; -1.876 ; -1.876 ; Rise       ; CLK             ;
+;  SRAM_DQ[1] ; CLK        ; -1.692 ; -1.692 ; Rise       ; CLK             ;
+;  SRAM_DQ[2] ; CLK        ; -1.833 ; -1.833 ; Rise       ; CLK             ;
+;  SRAM_DQ[3] ; CLK        ; -1.769 ; -1.769 ; Rise       ; CLK             ;
+;  SRAM_DQ[4] ; CLK        ; -1.680 ; -1.680 ; Rise       ; CLK             ;
+;  SRAM_DQ[5] ; CLK        ; -1.624 ; -1.624 ; Rise       ; CLK             ;
+;  SRAM_DQ[6] ; CLK        ; -1.655 ; -1.655 ; Rise       ; CLK             ;
+;  SRAM_DQ[7] ; CLK        ; -1.591 ; -1.591 ; Rise       ; CLK             ;
+; SRAM_DQ[*]  ; CLK2       ; -2.042 ; -2.042 ; Rise       ; CLK2            ;
+;  SRAM_DQ[0] ; CLK2       ; -2.311 ; -2.311 ; Rise       ; CLK2            ;
+;  SRAM_DQ[1] ; CLK2       ; -2.222 ; -2.222 ; Rise       ; CLK2            ;
+;  SRAM_DQ[2] ; CLK2       ; -2.266 ; -2.266 ; Rise       ; CLK2            ;
+;  SRAM_DQ[3] ; CLK2       ; -2.212 ; -2.212 ; Rise       ; CLK2            ;
+;  SRAM_DQ[4] ; CLK2       ; -2.212 ; -2.212 ; Rise       ; CLK2            ;
+;  SRAM_DQ[5] ; CLK2       ; -2.255 ; -2.255 ; Rise       ; CLK2            ;
+;  SRAM_DQ[6] ; CLK2       ; -2.098 ; -2.098 ; Rise       ; CLK2            ;
+;  SRAM_DQ[7] ; CLK2       ; -2.042 ; -2.042 ; Rise       ; CLK2            ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; seg1[*]   ; CLKAccum   ; 8.422 ; 8.422 ; Rise       ; CLKAccum        ;
+;  seg1[0]  ; CLKAccum   ; 8.172 ; 8.172 ; Rise       ; CLKAccum        ;
+;  seg1[1]  ; CLKAccum   ; 8.176 ; 8.176 ; Rise       ; CLKAccum        ;
+;  seg1[2]  ; CLKAccum   ; 8.173 ; 8.173 ; Rise       ; CLKAccum        ;
+;  seg1[3]  ; CLKAccum   ; 8.191 ; 8.191 ; Rise       ; CLKAccum        ;
+;  seg1[4]  ; CLKAccum   ; 8.422 ; 8.422 ; Rise       ; CLKAccum        ;
+;  seg1[5]  ; CLKAccum   ; 8.416 ; 8.416 ; Rise       ; CLKAccum        ;
+;  seg1[6]  ; CLKAccum   ; 8.413 ; 8.413 ; Rise       ; CLKAccum        ;
+; seg2[*]   ; CLKAccum   ; 9.006 ; 9.006 ; Rise       ; CLKAccum        ;
+;  seg2[0]  ; CLKAccum   ; 9.006 ; 9.006 ; Rise       ; CLKAccum        ;
+;  seg2[1]  ; CLKAccum   ; 8.990 ; 8.990 ; Rise       ; CLKAccum        ;
+;  seg2[2]  ; CLKAccum   ; 8.939 ; 8.939 ; Rise       ; CLKAccum        ;
+;  seg2[3]  ; CLKAccum   ; 8.922 ; 8.922 ; Rise       ; CLKAccum        ;
+;  seg2[4]  ; CLKAccum   ; 8.819 ; 8.819 ; Rise       ; CLKAccum        ;
+;  seg2[5]  ; CLKAccum   ; 8.806 ; 8.806 ; Rise       ; CLKAccum        ;
+;  seg2[6]  ; CLKAccum   ; 8.843 ; 8.843 ; Rise       ; CLKAccum        ;
+; seg3[*]   ; CLKAccum   ; 8.957 ; 8.957 ; Rise       ; CLKAccum        ;
+;  seg3[0]  ; CLKAccum   ; 8.905 ; 8.905 ; Rise       ; CLKAccum        ;
+;  seg3[1]  ; CLKAccum   ; 8.957 ; 8.957 ; Rise       ; CLKAccum        ;
+;  seg3[2]  ; CLKAccum   ; 8.849 ; 8.849 ; Rise       ; CLKAccum        ;
+;  seg3[3]  ; CLKAccum   ; 8.653 ; 8.653 ; Rise       ; CLKAccum        ;
+;  seg3[4]  ; CLKAccum   ; 8.682 ; 8.682 ; Rise       ; CLKAccum        ;
+;  seg3[5]  ; CLKAccum   ; 8.602 ; 8.602 ; Rise       ; CLKAccum        ;
+;  seg3[6]  ; CLKAccum   ; 8.805 ; 8.805 ; Rise       ; CLKAccum        ;
+; seg4[*]   ; CLKAccum   ; 8.912 ; 8.912 ; Rise       ; CLKAccum        ;
+;  seg4[0]  ; CLKAccum   ; 8.907 ; 8.907 ; Rise       ; CLKAccum        ;
+;  seg4[1]  ; CLKAccum   ; 8.844 ; 8.844 ; Rise       ; CLKAccum        ;
+;  seg4[2]  ; CLKAccum   ; 8.763 ; 8.763 ; Rise       ; CLKAccum        ;
+;  seg4[3]  ; CLKAccum   ; 8.912 ; 8.912 ; Rise       ; CLKAccum        ;
+;  seg4[4]  ; CLKAccum   ; 8.878 ; 8.878 ; Rise       ; CLKAccum        ;
+;  seg4[5]  ; CLKAccum   ; 8.860 ; 8.860 ; Rise       ; CLKAccum        ;
+;  seg4[6]  ; CLKAccum   ; 8.595 ; 8.595 ; Rise       ; CLKAccum        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; seg1[*]   ; CLKAccum   ; 4.196 ; 4.196 ; Rise       ; CLKAccum        ;
+;  seg1[0]  ; CLKAccum   ; 4.196 ; 4.196 ; Rise       ; CLKAccum        ;
+;  seg1[1]  ; CLKAccum   ; 4.198 ; 4.198 ; Rise       ; CLKAccum        ;
+;  seg1[2]  ; CLKAccum   ; 4.218 ; 4.218 ; Rise       ; CLKAccum        ;
+;  seg1[3]  ; CLKAccum   ; 4.210 ; 4.210 ; Rise       ; CLKAccum        ;
+;  seg1[4]  ; CLKAccum   ; 4.307 ; 4.307 ; Rise       ; CLKAccum        ;
+;  seg1[5]  ; CLKAccum   ; 4.300 ; 4.300 ; Rise       ; CLKAccum        ;
+;  seg1[6]  ; CLKAccum   ; 4.321 ; 4.321 ; Rise       ; CLKAccum        ;
+; seg2[*]   ; CLKAccum   ; 4.385 ; 4.385 ; Rise       ; CLKAccum        ;
+;  seg2[0]  ; CLKAccum   ; 4.493 ; 4.493 ; Rise       ; CLKAccum        ;
+;  seg2[1]  ; CLKAccum   ; 4.473 ; 4.473 ; Rise       ; CLKAccum        ;
+;  seg2[2]  ; CLKAccum   ; 4.452 ; 4.452 ; Rise       ; CLKAccum        ;
+;  seg2[3]  ; CLKAccum   ; 4.434 ; 4.434 ; Rise       ; CLKAccum        ;
+;  seg2[4]  ; CLKAccum   ; 4.385 ; 4.385 ; Rise       ; CLKAccum        ;
+;  seg2[5]  ; CLKAccum   ; 4.436 ; 4.436 ; Rise       ; CLKAccum        ;
+;  seg2[6]  ; CLKAccum   ; 4.451 ; 4.451 ; Rise       ; CLKAccum        ;
+; seg3[*]   ; CLKAccum   ; 4.403 ; 4.403 ; Rise       ; CLKAccum        ;
+;  seg3[0]  ; CLKAccum   ; 4.548 ; 4.548 ; Rise       ; CLKAccum        ;
+;  seg3[1]  ; CLKAccum   ; 4.584 ; 4.584 ; Rise       ; CLKAccum        ;
+;  seg3[2]  ; CLKAccum   ; 4.532 ; 4.532 ; Rise       ; CLKAccum        ;
+;  seg3[3]  ; CLKAccum   ; 4.452 ; 4.452 ; Rise       ; CLKAccum        ;
+;  seg3[4]  ; CLKAccum   ; 4.465 ; 4.465 ; Rise       ; CLKAccum        ;
+;  seg3[5]  ; CLKAccum   ; 4.403 ; 4.403 ; Rise       ; CLKAccum        ;
+;  seg3[6]  ; CLKAccum   ; 4.505 ; 4.505 ; Rise       ; CLKAccum        ;
+; seg4[*]   ; CLKAccum   ; 4.269 ; 4.269 ; Rise       ; CLKAccum        ;
+;  seg4[0]  ; CLKAccum   ; 4.409 ; 4.409 ; Rise       ; CLKAccum        ;
+;  seg4[1]  ; CLKAccum   ; 4.373 ; 4.373 ; Rise       ; CLKAccum        ;
+;  seg4[2]  ; CLKAccum   ; 4.342 ; 4.342 ; Rise       ; CLKAccum        ;
+;  seg4[3]  ; CLKAccum   ; 4.419 ; 4.419 ; Rise       ; CLKAccum        ;
+;  seg4[4]  ; CLKAccum   ; 4.415 ; 4.415 ; Rise       ; CLKAccum        ;
+;  seg4[5]  ; CLKAccum   ; 4.391 ; 4.391 ; Rise       ; CLKAccum        ;
+;  seg4[6]  ; CLKAccum   ; 4.269 ; 4.269 ; Rise       ; CLKAccum        ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------+
+; Progagation Delay                                         ;
++------------+--------------+-------+-------+-------+-------+
+; Input Port ; Output Port  ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------+-------+-------+-------+-------+
+; DATAIN[0]  ; SRAM_DQ[0]   ; 9.428 ;       ;       ; 9.428 ;
+; DATAIN[1]  ; SRAM_DQ[1]   ; 8.688 ;       ;       ; 8.688 ;
+; DATAIN[2]  ; SRAM_DQ[2]   ; 9.186 ;       ;       ; 9.186 ;
+; DATAIN[3]  ; SRAM_DQ[3]   ; 9.143 ;       ;       ; 9.143 ;
+; DATAIN[4]  ; SRAM_DQ[4]   ; 9.018 ;       ;       ; 9.018 ;
+; DATAIN[5]  ; SRAM_DQ[5]   ; 9.263 ;       ;       ; 9.263 ;
+; DATAIN[6]  ; SRAM_DQ[6]   ; 9.212 ;       ;       ; 9.212 ;
+; DATAIN[7]  ; SRAM_DQ[7]   ; 9.036 ;       ;       ; 9.036 ;
+; SADD[0]    ; SRAM_ADDR[0] ; 8.361 ;       ;       ; 8.361 ;
+; SADD[1]    ; SRAM_ADDR[1] ; 8.291 ;       ;       ; 8.291 ;
+; SADD[2]    ; SRAM_ADDR[2] ; 8.483 ;       ;       ; 8.483 ;
+; SADD[3]    ; SRAM_ADDR[3] ; 8.512 ;       ;       ; 8.512 ;
+; SADD[4]    ; SRAM_ADDR[4] ; 8.570 ;       ;       ; 8.570 ;
+; wrEN       ; SRAM_DQ[0]   ; 9.615 ; 9.615 ; 9.615 ; 9.615 ;
+; wrEN       ; SRAM_DQ[1]   ; 9.624 ; 9.624 ; 9.624 ; 9.624 ;
+; wrEN       ; SRAM_DQ[2]   ; 9.398 ; 9.398 ; 9.398 ; 9.398 ;
+; wrEN       ; SRAM_DQ[3]   ; 9.378 ; 9.378 ; 9.378 ; 9.378 ;
+; wrEN       ; SRAM_DQ[4]   ; 9.351 ; 9.351 ; 9.351 ; 9.351 ;
+; wrEN       ; SRAM_DQ[5]   ; 9.351 ; 9.351 ; 9.351 ; 9.351 ;
+; wrEN       ; SRAM_DQ[6]   ; 9.351 ; 9.351 ; 9.351 ; 9.351 ;
+; wrEN       ; SRAM_DQ[7]   ; 8.852 ; 8.852 ; 8.852 ; 8.852 ;
+; wrEN       ; SRAM_WE_N    ;       ; 9.480 ; 9.480 ;       ;
++------------+--------------+-------+-------+-------+-------+
+
+
++-----------------------------------------------------------+
+; Minimum Progagation Delay                                 ;
++------------+--------------+-------+-------+-------+-------+
+; Input Port ; Output Port  ; RR    ; RF    ; FR    ; FF    ;
++------------+--------------+-------+-------+-------+-------+
+; DATAIN[0]  ; SRAM_DQ[0]   ; 5.363 ;       ;       ; 5.363 ;
+; DATAIN[1]  ; SRAM_DQ[1]   ; 5.023 ;       ;       ; 5.023 ;
+; DATAIN[2]  ; SRAM_DQ[2]   ; 5.250 ;       ;       ; 5.250 ;
+; DATAIN[3]  ; SRAM_DQ[3]   ; 5.215 ;       ;       ; 5.215 ;
+; DATAIN[4]  ; SRAM_DQ[4]   ; 5.137 ;       ;       ; 5.137 ;
+; DATAIN[5]  ; SRAM_DQ[5]   ; 5.289 ;       ;       ; 5.289 ;
+; DATAIN[6]  ; SRAM_DQ[6]   ; 5.254 ;       ;       ; 5.254 ;
+; DATAIN[7]  ; SRAM_DQ[7]   ; 5.146 ;       ;       ; 5.146 ;
+; SADD[0]    ; SRAM_ADDR[0] ; 4.877 ;       ;       ; 4.877 ;
+; SADD[1]    ; SRAM_ADDR[1] ; 4.812 ;       ;       ; 4.812 ;
+; SADD[2]    ; SRAM_ADDR[2] ; 4.882 ;       ;       ; 4.882 ;
+; SADD[3]    ; SRAM_ADDR[3] ; 4.913 ;       ;       ; 4.913 ;
+; SADD[4]    ; SRAM_ADDR[4] ; 4.947 ;       ;       ; 4.947 ;
+; wrEN       ; SRAM_DQ[0]   ; 5.471 ; 5.471 ; 5.471 ; 5.471 ;
+; wrEN       ; SRAM_DQ[1]   ; 5.479 ; 5.479 ; 5.479 ; 5.479 ;
+; wrEN       ; SRAM_DQ[2]   ; 5.379 ; 5.379 ; 5.379 ; 5.379 ;
+; wrEN       ; SRAM_DQ[3]   ; 5.359 ; 5.359 ; 5.359 ; 5.359 ;
+; wrEN       ; SRAM_DQ[4]   ; 5.330 ; 5.330 ; 5.330 ; 5.330 ;
+; wrEN       ; SRAM_DQ[5]   ; 5.330 ; 5.330 ; 5.330 ; 5.330 ;
+; wrEN       ; SRAM_DQ[6]   ; 5.330 ; 5.330 ; 5.330 ; 5.330 ;
+; wrEN       ; SRAM_DQ[7]   ; 5.101 ; 5.101 ; 5.101 ; 5.101 ;
+; wrEN       ; SRAM_WE_N    ;       ; 5.434 ; 5.434 ;       ;
++------------+--------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLK        ; CLKAccum ; 696      ; 0        ; 0        ; 0        ;
+; CLK2       ; CLKAccum ; 696      ; 0        ; 0        ; 0        ;
+; CLKAccum   ; CLKAccum ; 136      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLK        ; CLKAccum ; 696      ; 0        ; 0        ; 0        ;
+; CLK2       ; CLKAccum ; 696      ; 0        ; 0        ; 0        ;
+; CLKAccum   ; CLKAccum ; 136      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 23    ; 23   ;
+; Unconstrained Input Port Paths  ; 54    ; 54   ;
+; Unconstrained Output Ports      ; 42    ; 42   ;
+; Unconstrained Output Port Paths ; 134   ; 134  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Nov 22 17:55:47 2017
+Info: Command: quartus_sta HAMMAM_MULTIPLYACCUM -c HAMMAM_SRAM
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'HAMMAM_SRAM.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name CLKAccum CLKAccum
+    Info (332105): create_clock -period 1.000 -name CLK CLK
+    Info (332105): create_clock -period 1.000 -name CLK2 CLK2
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -5.523
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -5.523       -78.828 CLKAccum 
+Info (332146): Worst-case hold slack is 0.795
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.795         0.000 CLKAccum 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.423
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.423       -23.990 CLK 
+    Info (332119):    -1.222       -17.222 CLKAccum 
+    Info (332119):    -1.222        -9.222 CLK2 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.454
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.454       -18.487 CLKAccum 
+Info (332146): Worst-case hold slack is 0.356
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.356         0.000 CLKAccum 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.519
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.519       -25.526 CLK 
+    Info (332119):    -1.222       -17.222 CLKAccum 
+    Info (332119):    -1.222        -9.222 CLK2 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 444 megabytes
+    Info: Processing ended: Wed Nov 22 17:55:50 2017
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
+
+
